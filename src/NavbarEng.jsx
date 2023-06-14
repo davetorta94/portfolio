@@ -8,7 +8,7 @@ export const NavbarEng = ({handleLanguage}) => {
         <div className="row">
         <nav className="navbar navbar-dark bg-dark fixed-top navbarwidth">
         
-          <div className="col-xl-4 col-lg-4 col-md-2 col-sm-2">
+          <div className="col-lg-2 p-0">
             <a className="navbar-brand" href="#">Portfolio David Torta Olah</a>
           </div>
           <div className="col-1 text-white responsive-navbar">
