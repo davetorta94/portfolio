@@ -144,7 +144,8 @@ a:hover {
       display: none;
     }
     .boton-responsive{
-      display: block;
+      display: flex;
+      justify-content: center;
     }
     .home{
       margin-top: 55px;
@@ -153,7 +154,13 @@ a:hover {
 
   @media only screen and  (max-width : 588px){
     .home{
-      margin-top: 70px;
+      margin-top: 105px;
+    }
+  }
+
+  @media only screen and (max-width : 992px){
+    .home{
+      margin-top: 105px;
     }
   }
 

@@ -4,8 +4,8 @@ export const NavbarEng = ({handleLanguage}) => {
   
 
     return (
-      <div className="row">
-        <div className="container-fluid d-flex justify-content-center">
+      <div className="container-fluid d-flex justify-content-lg-center">
+        <div className="row">
         <nav className="navbar navbar-dark bg-dark fixed-top navbarwidth">
         
           <div className="col-xl-4 col-lg-4 col-md-2 col-sm-2">

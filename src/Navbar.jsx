@@ -4,10 +4,10 @@ export const Navbar = ({handleLanguage}) => {
   
 
   return (
-    <div className="row">
-       <div className="container-fluid d-flex justify-content-center">
+    <div className="container-fluid d-flex justify-content-lg-center">
+       <div className="row">
       <nav className="navbar navbar-dark bg-dark fixed-top navbarwidth">
-        <div className="col-4">
+        <div className="col-lg-2 p-0">
           <a className="navbar-brand" href="#">Portfolio David Torta Olah</a>
         </div>
         <div className="col-1 text-white responsive-navbar">
@@ -20,7 +20,7 @@ export const Navbar = ({handleLanguage}) => {
           <a href="#sobremi">Sobre mi</a>
         </div>
 
-        <button className="dropdown boton-responsive button">
+        <button className="dropdown boton-responsive button col-md-1">
         <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
         </a>
         <div className="dropdown-menu bg-dark">
