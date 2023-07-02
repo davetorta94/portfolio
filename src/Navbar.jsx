@@ -4,7 +4,7 @@ export const Navbar = ({handleLanguage}) => {
   
 
   return (
-    <div className="container-fluid d-flex justify-content-lg-center">
+    <div className="container-fluid d-flex justify-content-lg-center mx-xs-0">
        <div className="row">
       <nav className="navbar navbar-dark bg-dark fixed-top navbarwidth">
         <div className="col-lg-2 p-0">

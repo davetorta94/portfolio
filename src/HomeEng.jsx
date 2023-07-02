@@ -5,7 +5,7 @@ import profilepic from './images/fotoperfil.jpg'
 export const HomeEng = () => {
     return (
       <>
-      <div className="container-fluid home mt-lg-5" id='home'>
+      <div className="container-fluid home mt-lg-5 p-sm-1 mx-xs-0" id='home'>
         <div className="row black text-white">
         <div className="col-xl-6 col-lg-12 mt-sm-5 mt-md-5 d-flex flex-column text-center justify-content-center">
               <h2>Hi! My name is David Torta</h2>

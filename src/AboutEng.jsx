@@ -7,7 +7,7 @@ export const AboutEng = () => {
   return (
     <>
 
-      <div className="container-fluid mt-5">
+      <div className="container-fluid mt-5 mx-xs-0">
         <div className="row text-white d-flex justify-content-center animate__animated animate__slideInDown">
             <h4>ABOUT ME</h4>
         </div>

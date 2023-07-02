@@ -156,6 +156,14 @@ a:hover {
     .home{
       margin-top: 105px;
     }
+    .profilepic{
+      width: 20rem;  
+    }
+    .linkpic{
+      width: 20rem;
+      height: auto;
+      opacity: 0.9;
+  }
   }
 
   @media only screen and (max-width : 992px){
