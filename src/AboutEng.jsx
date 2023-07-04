@@ -31,7 +31,7 @@ export const AboutEng = () => {
                 <a href="https://github.com/davetorta94" target='_blank'><IconContext.Provider value={{size: "2em"}}><GoMarkGithub /></IconContext.Provider></a>
             </div>
           <div className="col-1">
-            <a href="https://www.linkedin.com/in/david-torta-b50b4819b/" target='_blank'><IconContext.Provider value={{size: "2em"}}><IoLogoLinkedin /></IconContext.Provider></a>
+            <a href="https://www.linkedin.com/in/david-torta-olah-b50b4819b/" target='_blank'><IconContext.Provider value={{size: "2em"}}><IoLogoLinkedin /></IconContext.Provider></a>
             </div>
         </div>
     </div>
