@@ -27,7 +27,7 @@ export const Navbar = ({handleLanguage}) => {
           <a className="dropdown-item text-white" href="#home">Inicio</a>
           <a className="dropdown-item text-white" href="#proyectos">Proyectos</a>
           <a className="dropdown-item text-white" href="#sobremi">Sobre mi</a>
-          <button className="dropdown-item button px-3 pb-1 mx-3" onClick={handleLanguage}>ENG</button>
+          <a className="dropdown-item button px-3 pb-1 mx-3" href="#" role="button">ENG</a>
         </div>
       </button>
         
