@@ -13,6 +13,7 @@ a:hover {
 .home{
   margin-top: 120px;
   margin-bottom: 120px;
+  height: 500px;
 }
 
 .introduction{
@@ -134,6 +135,11 @@ a:hover {
     left: 0;
     width: 50px;
     height: 25px;
+  }
+
+  .type-animation-font{
+    font-size: 2em;
+    color: #fff;
   }
 
   .menu{

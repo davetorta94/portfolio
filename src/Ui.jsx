@@ -8,6 +8,7 @@ import { Home } from './Home'
 import { HomeEng } from './HomeEng'
 import { NavbarEng } from './NavbarEng'
 import {ParticleBackground} from './ParticleBackground'
+import { Tecnologias } from './Tecnologias'
 
 export const Ui = () => {
 
@@ -34,6 +35,7 @@ export const Ui = () => {
             <div className='container-fluid p-0'>
               <ParticleBackground />
               <Home />
+              <Tecnologias />
               <Proyectos />
               <About />
             </div>

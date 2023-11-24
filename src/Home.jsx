@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
-import profilepic from './images/fotoperfil.jpg'
+import { TypeAnimation } from 'react-type-animation';
+import { ImagePresentation } from "./components/ImagePresentation";
+
 
 export const Home = () => {
 
@@ -19,29 +21,36 @@ export const Home = () => {
 
   return (
     <>
-    <div className="container-fluid home pt-sm-1 mx-0 mx-xs-0" id='home'>
+    <div className="container-fluid pt-sm-1 mx-0 mx-xs-0" id='home'>
 
-        <motion.div className="row black text-white"
+        <motion.div className="row home black text-white d-flex justify-content-center"
                     ref={ref}
                     variants={{
-                      hide: { opacity: 0, y: 100},
-                      nohide: { opacity: 1 ,y: 0 }
+                      hide: { opacity: 0},
+                      nohide: { opacity: 1}
                     }}
                       initial="hide"
                       animate={pageControls}
                       transition={ {ease: "easeOut", duration: 2} }>
             <div className="col-xl-6 col-lg-12 mt-sm-5 mt-md-5 d-flex flex-column text-center justify-content-center">
-              <h2>¡Hola! Me llamo David Torta</h2>
-              <p>y soy un programador de front-end especializado en React</p>
+            <TypeAnimation
+                      sequence={[
+                        "¡Hola! Me llamo David Torta",
+                        1000,
+                        "y soy un programador de front-end especializado en React",
+                        1000,
+                        "¿En que puedo ayudarte?",
+                        1000,
+                      ]}
+                      speed={50}
+                      
+                      className="type-animation-font"
+                    />
+              
+              {/*<h2>¡Hola! Me llamo David Torta</h2>
+              <p>y soy un programador de front-end especializado en React</p>*/}
             </div>
-            <div className="col-xl-4 col-lg-12 col-md-12 d-md-flex justify-content-md-center">
-               <div className="card fondo-card sombrita">
-                 <img src={profilepic} className='profilepic' alt="foto"></img>
-                 <div className="card-body fondo-card text-white border-top-1">
-                       <p className="card-text">David Torta Olah</p>
-                     </div>
-                 </div>
-               </div>
+            {/*<ImagePresentation />*/}
         </motion.div>
       </div>
     
