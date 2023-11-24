@@ -7,6 +7,7 @@ import { ProyectosEng } from './ProyectosEng'
 import { Home } from './Home'
 import { HomeEng } from './HomeEng'
 import { NavbarEng } from './NavbarEng'
+import {ParticleBackground} from './ParticleBackground'
 
 export const Ui = () => {
 
@@ -30,7 +31,8 @@ export const Ui = () => {
               <Navbar handleLanguage={handleLanguage}/>
             </div>
 
-            <div className='container-fluid black p-0'>
+            <div className='container-fluid p-0'>
+              <ParticleBackground />
               <Home />
               <Proyectos />
               <About />
@@ -42,7 +44,8 @@ export const Ui = () => {
               <NavbarEng handleLanguage={handleLanguage}/>
             </div>
 
-            <div className='container-fluid black p-0'>
+            <div className='container-fluid p-0'>
+            <ParticleBackground />
               <HomeEng />
               <ProyectosEng />
               <AboutEng />

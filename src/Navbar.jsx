@@ -6,7 +6,7 @@ export const Navbar = ({handleLanguage}) => {
   return (
     <div className="container-fluid d-flex justify-content-lg-center mx-xs-0">
        <div className="row">
-      <nav className="navbar navbar-dark bg-dark fixed-top navbarwidth">
+      <nav className="navbar bg-navbar fixed-top">
         <div className="col-lg-2 p-0">
           <a className="navbar-brand" href="#">Portfolio David Torta Olah</a>
         </div>
@@ -23,7 +23,7 @@ export const Navbar = ({handleLanguage}) => {
         <button className="dropdown boton-responsive button col-md-1">
         <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
         </a>
-        <div className="dropdown-menu bg-dark">
+        <div className="dropdown-menu fondo-card">
           <a className="dropdown-item text-white" href="#home">Inicio</a>
           <a className="dropdown-item text-white" href="#proyectos">Proyectos</a>
           <a className="dropdown-item text-white" href="#sobremi">Sobre mi</a>

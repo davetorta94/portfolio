@@ -1,12 +1,36 @@
+import React, { useEffect, useRef } from "react";
+import {motion, useInView, useAnimation} from "framer-motion";
 import profilepic from './images/fotoperfil.jpg'
 
 export const Home = () => {
+
+    const ref = useRef(null);
+    const isInView = useInView(ref);
+    const pageControls = useAnimation();
+
+    useEffect(() => {
+      if (isInView) {
+       pageControls.start("nohide");
+       
+      } else {
+       pageControls.start("hide");
+      }
+     }, [isInView])
+
   return (
     <>
-    <div className="container-fluid home mt-lg-5 pt-sm-1 mx-0 mx-xs-0" id='home'>
+    <div className="container-fluid home pt-sm-1 mx-0 mx-xs-0" id='home'>
 
-        <div className="row black text-white">
-        <div className="col-xl-6 col-lg-12 mt-sm-5 mt-md-5 d-flex flex-column text-center justify-content-center">
+        <motion.div className="row black text-white"
+                    ref={ref}
+                    variants={{
+                      hide: { opacity: 0, y: 100},
+                      nohide: { opacity: 1 ,y: 0 }
+                    }}
+                      initial="hide"
+                      animate={pageControls}
+                      transition={ {ease: "easeOut", duration: 2} }>
+            <div className="col-xl-6 col-lg-12 mt-sm-5 mt-md-5 d-flex flex-column text-center justify-content-center">
               <h2>¡Hola! Me llamo David Torta</h2>
               <p>y soy un programador de front-end especializado en React</p>
             </div>
@@ -18,7 +42,7 @@ export const Home = () => {
                      </div>
                  </div>
                </div>
-        </div>
+        </motion.div>
       </div>
     
 

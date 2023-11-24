@@ -1,13 +1,36 @@
+import React, { useEffect, useRef } from "react";
+import {motion, useInView, useAnimation} from "framer-motion";
 import { IconContext } from "react-icons"
 import { GoMarkGithub } from "react-icons/go";
 import { IoLogoLinkedin } from "react-icons/io";
 
 
 export const AboutEng = () => {
+
+  const ref = useRef(null);
+    const isInView = useInView(ref);
+    const aboutControls = useAnimation();
+
+    useEffect(() => {
+      if (isInView) {
+       aboutControls.start("nohide");
+       
+      } else {
+       aboutControls.start("hide");
+      }
+     }, [isInView])
   return (
     <>
 
-      <div className="container-fluid mt-5 mx-xs-0">
+<motion.div className="container-fluid mt-5 mx-xs-0"
+    ref={ref}
+    variants={{
+      hide: { opacity: 0, y: 100, scale:0.5},
+      nohide: { opacity: 1 ,y: 0, scale: 1 }
+    }}
+      initial="hide"
+      animate={aboutControls}
+      transition={ {ease: "easeOut", duration: 1} }>
         <div className="row text-white d-flex justify-content-center animate__animated animate__slideInDown">
             <h4>ABOUT ME</h4>
         </div>
@@ -20,7 +43,7 @@ export const AboutEng = () => {
             Thanks to the knowledge I acquired in my degree, plus the ones I have been adding to my repertoire through programming courses and practice, I think I can be a good asset for any company, since I can not only adapt the messages and content of the webs to the target, but I can also materialize these pages, using HTML5, CSS, JavaScript, Bootstrap and React. This portfolio has been made with Bootstrap and React <br /> <br /> Currently I am learning Node.js and MERN</p>
             </div>
         </div>
-      </div>
+      </motion.div>
     
         <div className="container">
         <div className="row text-white d-flex justify-content-center mt-4">
