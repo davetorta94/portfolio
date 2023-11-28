@@ -9,6 +9,8 @@ import { HomeEng } from './HomeEng'
 import { NavbarEng } from './NavbarEng'
 import {ParticleBackground} from './ParticleBackground'
 import { Tecnologias } from './Tecnologias'
+import { Draw } from './Draw'
+import { Footer } from './Footer'
 
 export const Ui = () => {
 
@@ -36,8 +38,9 @@ export const Ui = () => {
               <ParticleBackground />
               <Home />
               <Tecnologias />
-              <Proyectos />
               <About />
+              <Proyectos />
+              <Footer />
             </div>
             </>
             :
@@ -51,6 +54,7 @@ export const Ui = () => {
               <HomeEng />
               <ProyectosEng />
               <AboutEng />
+              <Footer />
             </div>
             </>
           }

@@ -1,5 +1,8 @@
+body {
+  overflow-x: hidden;
+}
 a, p, h4{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto;
 }
 a{
   color: #fff;
@@ -11,9 +14,33 @@ a:hover {
 }
 
 .home{
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 250px;
+ 
   height: 500px;
+}
+
+.animaciones{
+  opacity: 0.9;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.bg-about {
+  background-color:#24202b;
+}
+
+circle,
+rect,
+line {
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: transparent;
+}
+
+.border-tecnologico{
+  background-color: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .introduction{
@@ -46,6 +73,11 @@ a:hover {
   margin-top: 0;
 }
 
+.overflow-tecnologias {
+  overflow-x: hidden;
+  margin-top: 100px;
+}
+
 /*.black{
   background-color: #68686b;
   opacity: 0.8;
@@ -64,9 +96,13 @@ a:hover {
   opacity: 1;
 }
 
+.astronauta {
+  opacity: 0.9;
+}
+
 .sombrita {
     border: 0px solid #000;
-    box-shadow: 20px 20px 50px 15px #000;
+    box-shadow: 20px 20px 50px 15px #301f4b;
 }
 
 .navbarwidth {

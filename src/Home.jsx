@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
 import { TypeAnimation } from 'react-type-animation';
 import { ImagePresentation } from "./components/ImagePresentation";
+import { Cohete } from "./components/Cohete";
+import { Draw } from "./Draw";
 
 
 export const Home = () => {
@@ -21,7 +23,7 @@ export const Home = () => {
 
   return (
     <>
-    <div className="container-fluid pt-sm-1 mx-0 mx-xs-0" id='home'>
+    <div className="container-fluid pt-sm-1 mx-0 mx-xs-0 bg-dark" id='home'>
 
         <motion.div className="row home black text-white d-flex justify-content-center"
                     ref={ref}
@@ -37,12 +39,12 @@ export const Home = () => {
                       sequence={[
                         "¡Hola! Me llamo David Torta",
                         1000,
-                        "y soy un programador de front-end especializado en React",
+                        "y soy un  front-end dev especializado en React",
                         1000,
                         "¿En que puedo ayudarte?",
                         1000,
                       ]}
-                      speed={50}
+                      speed={25}
                       
                       className="type-animation-font"
                     />
@@ -50,6 +52,12 @@ export const Home = () => {
               {/*<h2>¡Hola! Me llamo David Torta</h2>
               <p>y soy un programador de front-end especializado en React</p>*/}
             </div>
+            
+           
+              {/*<Cohete />*/}
+
+              <Draw />
+            
             {/*<ImagePresentation />*/}
         </motion.div>
       </div>
