@@ -39,7 +39,7 @@ export const Home = () => {
                       initial="hide"
                       animate={pageControls}
                       transition={ {ease: "easeOut", duration: 2} }>
-            <div className="type-animation col-xl-6 col-lg-12 mt-sm-5 mt-md-5 d-flex flex-column text-center justify-content-center">
+            <div className="type-animation col-xl-6 col-lg-12 d-flex flex-column text-center justify-content-center">
             <TypeAnimation
                       sequence={[
                         "¡Hola! Me llamo David Torta",
