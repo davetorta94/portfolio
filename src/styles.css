@@ -24,7 +24,9 @@ a:hover {
   margin-top: 150px;
   margin-bottom: 150px;
 }
-
+.type-animation{
+  margin-bottom: 150px;
+}
 .bg-about {
   background-color:#24202b;
 }
@@ -76,6 +78,9 @@ line {
 .overflow-tecnologias {
   overflow-x: hidden;
   margin-top: 100px;
+}
+.responsive-tecnologias{
+  display: none;
 }
 
 /*.black{
@@ -178,6 +183,10 @@ line {
     color: #fff;
   }
 
+  .punto{
+    opacity: 0.9;
+  }
+
   .menu{
     width: 10px;
   }
@@ -205,6 +214,7 @@ line {
     .home{
       margin-top: 55px;
     }
+    
   }
 
   @media only screen and  (max-width : 588px){
@@ -219,6 +229,20 @@ line {
       height: auto;
       opacity: 0.9;
   }
+
+  .animaciones{
+    opacity: 0.9;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+    .overflow-tecnologias{
+      margin-top: 0px;
+      display: none;
+    }
+    .responsive-tecnologias{
+      display: block;
+    }
   }
 
   @media only screen and (max-width : 992px){

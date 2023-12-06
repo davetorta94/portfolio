@@ -21,7 +21,8 @@ export const Draw = () => {
     
     <>
     <div className="container-fluid animaciones d-flex justify-content-center">
-    <motion.svg
+      <motion.div className="row d-flex justify-content-center">
+        <motion.svg
           width="600"
           height="600"
           viewBox="0 0 600 600"
@@ -36,36 +37,8 @@ export const Draw = () => {
             variants={draw}
             custom={1}
           />
-          <motion.line
-            x1="220"
-            y1="30"
-            x2="360"
-            y2="170"
-            stroke="#00cc88"
-            variants={draw}
-            custom={2}
-          />
-          <motion.line
-            x1="220"
-            y1="170"
-            x2="360"
-            y2="30"
-            stroke="#00cc88"
-            variants={draw}
-            custom={2.5}
-          />
-          <motion.rect
-            width="140"
-            height="140"
-            x="410"
-            y="30"
-            rx="20"
-            stroke="#0099ff"
-            variants={draw}
-            custom={3}
-          />
-         
         </motion.svg>
+      </motion.div>
     </div>
         
     </>

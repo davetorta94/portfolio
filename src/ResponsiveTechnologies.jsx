@@ -3,27 +3,27 @@ import {motion, useInView, useAnimation} from "framer-motion";
 import { TypeAnimation } from 'react-type-animation';
 
 
-export const Tecnologias = () => {
+export const ResponsiveTechnologies = () => {
 
     const ref = useRef(null);
     const isInView = useInView(ref);
-    const technologyControls = useAnimation();
+    const resTechnologyControls = useAnimation();
 
     useEffect(() => {
      
-       technologyControls.start("nohide");
+       resTechnologyControls.start("nohide");
        
       
      }, [])
 
   return (
     <>
-    <div className="container-fluid overflow-tecnologias">
+    <div className="container-fluid responsive-tecnologias">
         <div className="row d-flex justify-content-center mb-5">
             <div className="col-6 d-flex justify-content-center text-light">
                 <h4><TypeAnimation
                       sequence={[
-                        "LAS TECNOLOGÍAS CON LAS QUE TRABAJO",
+                        "MIS TECNOLOGÍAS",
                         500,
                         
                       ]}
@@ -33,14 +33,14 @@ export const Tecnologias = () => {
                     /></h4>
             </div>
         </div>
-        <motion.div className="row d-flex justify-content-lg-between justify-content-md-around"
+        <motion.div className="row d-flex justify-content-between"
         ref={ref}
         variants={{
-            hide: { x: 1500},
-            nohide: { x: -1500 }
+            hide: { x: 500},
+            nohide: { x: -500 }
         }}
           initial="hide"
-          animate={technologyControls}
+          animate={resTechnologyControls}
           transition={ {ease: "easeIn", duration: 15, repeat: Infinity} }>
             <div className="col-1 text-light text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 128 128"><path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198l-45.019 12.48z"/><path fill="#F16529" d="m64 116.8l36.378-10.086l8.559-95.878H64z"/><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692l3.382 37.927H64zm0 35.743l-.061.017l-15.327-4.14l-.979-10.975H33.816l1.928 21.609l28.193 7.826l.063-.017z"/><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849l-15.35 4.143v14.319l28.215-7.82l.207-2.325l3.234-36.233l.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092l.628-6.978l.329-3.692z"/></svg><label>HTML5</label>

@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { ImagePresentation } from "./components/ImagePresentation";
 import { Cohete } from "./components/Cohete";
 import { Draw } from "./Draw";
+import { Star } from "./Star";
 
 
 export const Home = () => {
@@ -25,6 +26,10 @@ export const Home = () => {
     <>
     <div className="container-fluid pt-sm-1 mx-0 mx-xs-0 bg-dark" id='home'>
 
+        <div className="row">
+            <Star />
+        </div>
+
         <motion.div className="row home black text-white d-flex justify-content-center"
                     ref={ref}
                     variants={{
@@ -34,7 +39,7 @@ export const Home = () => {
                       initial="hide"
                       animate={pageControls}
                       transition={ {ease: "easeOut", duration: 2} }>
-            <div className="col-xl-6 col-lg-12 mt-sm-5 mt-md-5 d-flex flex-column text-center justify-content-center">
+            <div className="type-animation col-xl-6 col-lg-12 mt-sm-5 mt-md-5 d-flex flex-column text-center justify-content-center">
             <TypeAnimation
                       sequence={[
                         "¡Hola! Me llamo David Torta",
@@ -55,11 +60,14 @@ export const Home = () => {
             
            
               {/*<Cohete />*/}
-
-              <Draw />
+              
+              {/*<Draw />/*}
             
             {/*<ImagePresentation />*/}
         </motion.div>
+        <div className="row">
+          <Star />
+        </div>
       </div>
     
 

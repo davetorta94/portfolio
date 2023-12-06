@@ -11,6 +11,7 @@ import {ParticleBackground} from './ParticleBackground'
 import { Tecnologias } from './Tecnologias'
 import { Draw } from './Draw'
 import { Footer } from './Footer'
+import { ResponsiveTechnologies } from './ResponsiveTechnologies'
 
 export const Ui = () => {
 
@@ -38,6 +39,7 @@ export const Ui = () => {
               <ParticleBackground />
               <Home />
               <Tecnologias />
+              <ResponsiveTechnologies />
               <About />
               <Proyectos />
               <Footer />
