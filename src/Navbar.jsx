@@ -1,7 +1,17 @@
-
+import React, { useEffect, useRef } from "react";
+import {motion, useInView, useAnimation} from "framer-motion";
 
 export const Navbar = ({handleLanguage}) => {
   
+    //const navControls = useAnimation();
+//
+//
+    // useEffect(() => {
+    //  setTimeout(()=>{
+    //    navControls.start("nohidden");
+    //  },2000)
+    // }, [])
+     
 
   return (
     <div className="container-fluid d-flex justify-content-lg-center mx-xs-0">

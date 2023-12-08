@@ -39,7 +39,7 @@ export const Home = () => {
                       initial="hide"
                       animate={pageControls}
                       transition={ {ease: "easeOut", duration: 2} }>
-            <div className="type-animation col-xl-6 col-lg-12 d-flex flex-column text-center justify-content-center">
+            <motion.div className="type-animation col-xl-6 col-lg-12 d-flex flex-column text-center justify-content-center">
             <TypeAnimation
                       sequence={[
                         "¡Hola! Me llamo David Torta",
@@ -49,14 +49,14 @@ export const Home = () => {
                         "¿En que puedo ayudarte?",
                         1000,
                       ]}
-                      speed={25}
+                      speed={50}
                       
                       className="type-animation-font"
                     />
               
               {/*<h2>¡Hola! Me llamo David Torta</h2>
               <p>y soy un programador de front-end especializado en React</p>*/}
-            </div>
+            </motion.div>
             
            
               {/*<Cohete />*/}
