@@ -104,6 +104,7 @@ line {
     width: 25rem;
     height: auto;
     opacity: 0.9;
+    border: 1px solid #fff;
 }
 
 .linkpic:hover {
@@ -126,7 +127,9 @@ line {
 
 .bg-navbar {
   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(88,72,111,1) 50%, rgba(2,0,36,1) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(88,72,111,1) 50%, rgba(2,0,36,1) 100%);
+  border-top: 1px solid #301f4b;
+  border-bottom: 1px solid #301f4b;
 }
 
 .checkbox-apple {
@@ -180,6 +183,12 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(88,72,111,1) 50%, rgb
   .checkbox-apple label:hover:after {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }
+
+  .project-images {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
   
   .yep {
     position: absolute;
@@ -196,6 +205,10 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(88,72,111,1) 50%, rgb
 
   .punto{
     opacity: 0.9;
+  }
+
+  .res-punto{
+    display: none;
   }
 
   .menu{
@@ -219,11 +232,68 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(88,72,111,1) 50%, rgb
       display: none;
     }
     .boton-responsive{
+      width: 80px;
+      height: 50px;
+      border-radius: 5px;
+      border: 2px solid #000;
+      transition: all 0.5s ease-in-out;
+      font-size: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 600;
+      display: flex;
+      background: #8c11bd;
+      color: #f5f5f5;
       display: flex;
       justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .boton-responsive a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px
+    }
+    
+    .boton-responsive:hover {
+      box-shadow: 0 0 20px 0px #2e2e2e3a;
+    }
+    
+    .boton-responsive .icon {
+      position: absolute;
+      height: 40px;
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+    }
+    
+      .boton-responsive .text {
+      transform: translateX(55px);
+    }
+    
+    .boton-responsive:hover .icon {
+      width: 175px;
+    }
+    
+    .boton-responsive:hover .text {
+      transition: all 0.5s;
+      opacity: 0;
+    }
+    
+    .boton-responsive:focus {
+      outline: none;
+    }
+    
+    .boton-responsive:active .icon {
+      transform: scale(0.85);
     }
     .home{
       margin-top: 55px;
+    }
+    .second-project-pic{
+      margin-top: 35px;
     }
     
   }
@@ -236,9 +306,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(88,72,111,1) 50%, rgb
       width: 20rem;  
     }
     .linkpic{
-      width: 20rem;
+      width: 10px;
       height: auto;
       opacity: 0.9;
+      border: 1px solid #fff;
+  }
+
+  .second-project-pic{
+    margin-top: 100px;
   }
 
   .animaciones{
@@ -262,6 +337,28 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(88,72,111,1) 50%, rgb
     }
   }
 
+  @media only screen and (max-width : 1080px){
+    .project-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .linkpic{
+      width: 16rem;
+      height: auto;
+      opacity: 0.9;
+      border: 1px solid #fff;
+  }
+    .res-punto{
+      display: flex;
+    }
+    .punto{
+      display: none;
+    }
+  
+    
+  }
+
   .button {
     margin: 12px;
     height: 30px;
@@ -283,3 +380,5 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(88,72,111,1) 50%, rgb
     transition: 500ms;
     box-shadow: #b3b3b3 1px;
   }
+
+ 

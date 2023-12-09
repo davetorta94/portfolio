@@ -51,3 +51,26 @@ export const Navbar = ({handleLanguage}) => {
 }
 
 
+//<button className="dropdown navbar-toggler boton-responsive">
+//              <a
+//                className="nav-link navbar-toggler-icon"
+//                href="#"
+//                role="button"
+//                data-toggle="dropdown"
+//                aria-expanded="false"
+//              ></a>
+//              <div className="dropdown-menu">
+//                <a className="dropdown-item" href="#home">
+//                  Inicio
+//                </a>
+//                <a className="dropdown-item" href="#proyectos">
+//                  Proyectos
+//                </a>
+//                <a className="dropdown-item" href="#sobremi">
+//                  Sobre mi
+//                </a>
+//                <a className="dropdown-item button px-3 pb-1 mx-3" href="#" role="button">
+//                  ENG
+//                </a>
+//              </div>
+//            </button>

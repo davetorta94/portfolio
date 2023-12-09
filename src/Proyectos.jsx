@@ -16,16 +16,16 @@ export const Proyectos = () => {
               <h4>ALGUNOS DE MIS PROYECTOS</h4>
 
       </div>
-      <div className="row d-flex justify-content-center mx-xl-5 pb-5 mx-sm-4 mx-md-4">
+      <div className="row project-images mx-xl-5 pb-5 mx-sm-4 mx-md-4">
 
-            <div className="col-lg-4 col-md-12 text-white text-center mx-md-5 mt-md-2 mt-sm-2">
+            <div className="col-lg-4 col-md-12 text-white text-center mx-lg-5 mx-md-0 mt-md-2 mt-sm-2">
           <Parallax scale={[1,2]}>
                 <h4 className='pb-2'>App de Tareas</h4>
                 <a href="https://sparkling-panda-572dfa.netlify.app/?" target='_blank'><img src={todopic} alt="" className='linkpic' ></img></a>
           </Parallax>
             </div>
           
-          <div className="col-lg-4 col-md-12 text-white text-center mx-md-5 mt-md-2 mt-sm-2">
+          <div className="col-lg-4 col-md-12 text-white text-center mx-md-5 mt-md-2 second-project-pic">
               <Parallax scale={[1,2]}>
               <h4 className='pb-2'>Reproductor de Música</h4>
               <a href="https://chipper-sorbet-86ac03.netlify.app/" target='_blank'><img src={playerpic} alt="" className='linkpic' ></img></a>
