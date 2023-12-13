@@ -11,7 +11,7 @@ export const Proyectos = () => {
     
    
       <div className="container-fluid fondo-hor animate__animated animate__fadeInLeft sombrita mt-4 mx-xs-0" id='proyectos'>
-      <div className="row d-flex justify-content-center mt-4 text-white mb-4 pt-4">
+      <div className="row d-flex justify-content-center mt-4 text-center text-white mb-4 pt-4">
 
               <h4>ALGUNOS DE MIS PROYECTOS</h4>
 

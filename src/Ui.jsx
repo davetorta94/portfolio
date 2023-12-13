@@ -35,8 +35,10 @@ export const Ui = () => {
               <Navbar handleLanguage={handleLanguage}/>
             </div>
 
-            <div className='container-fluid p-0'>
+            <div className='container-fluid p-0 responsive-background'>
+              <div className='particles'>
               <ParticleBackground />
+              </div>
               <Home />
               <Tecnologias />
               <ResponsiveTechnologies />
