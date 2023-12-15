@@ -8,23 +8,39 @@ export const Tecnologias = () => {
     const ref = useRef(null);
     const isInView = useInView(ref);
     const technologyControls = useAnimation();
+    const containerControls = useAnimation();
 
     useEffect(() => {
+
+      if(isInView){
+        containerControls.start("shown");
+        technologyControls.start("nohide");
+      } else {
+        technologyControls.start("hide");
+        containerControls.start("hidden");
+      }
      
-       technologyControls.start("nohide");
        
       
-     }, [])
+     }, [isInView])
 
   return (
     <>
-    <div className="container-fluid overflow-tecnologias">
+    <motion.div className="container-fluid overflow-tecnologias"
+                ref={ref}
+                variants={{
+                  hidden: {opacity:0},
+                  shown: {opacity:1},
+                }}
+                initial="hidden"
+                animate={containerControls}
+                transition={{ease: "easeIn", duration: 2}}>
         <div className="row d-flex justify-content-center mb-5">
             <div className="col-6 d-flex justify-content-center text-light">
                 <h4><TypeAnimation
                       sequence={[
                         "LAS TECNOLOGÍAS CON LAS QUE TRABAJO",
-                        500,
+                        2000,
                         
                       ]}
                       speed={20}
@@ -34,7 +50,6 @@ export const Tecnologias = () => {
             </div>
         </div>
         <motion.div className="row d-flex justify-content-lg-between justify-content-md-around"
-        ref={ref}
         variants={{
             hide: { x: 1500},
             nohide: { x: -1500 }
@@ -61,7 +76,7 @@ export const Tecnologias = () => {
             <motion.div className="row barra">
 
             </motion.div>
-    </div>
+    </motion.div>
    
     </>
   )

@@ -13,6 +13,7 @@ export const Home = () => {
     const ref = useRef(null);
     const isInView = useInView(ref);
     const pageControls = useAnimation();
+   
 
     useEffect(() => {
       if (isInView) {
@@ -25,7 +26,7 @@ export const Home = () => {
 
   return (
     <>
-    <div className="container-fluid pt-sm-1 mx-0 mx-xs-0" id='home'>
+    <div className="container-fluid pt-sm-1 mt-5 mx-0 mx-xs-0" id='home'>
 
         
 
@@ -77,20 +78,17 @@ export const Home = () => {
               </div>
             
               
-              {/*<h2>¡Hola! Me llamo David Torta</h2>
-              <p>y soy un programador de front-end especializado en React</p>*/}
+  
             </motion.div>
             
+            <ImagePresentation />
            
-              {/*<Cohete />*/}
-              
-              {/*<Draw />/*}
+             
             
-            {/*<ImagePresentation />*/}
         </motion.div>
         <div className="row punto"> 
 
-           <Star />    
+          {/* <Star />*/}    
          {/* <ResponsiveStar />*/}
           {/*<MobileStar />*/}
         </div>
