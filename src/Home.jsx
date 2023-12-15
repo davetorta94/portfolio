@@ -90,7 +90,7 @@ export const Home = () => {
         </motion.div>
         <div className="row punto"> 
 
-           <Star />      
+           <Star />    
          {/* <ResponsiveStar />*/}
           {/*<MobileStar />*/}
         </div>
