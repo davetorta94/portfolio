@@ -16,8 +16,9 @@ export const Navbar = ({handleLanguage}) => {
   return (
     <div className="container-fluid d-flex justify-content-lg-center mx-xs-0">
        <div className="row">
-      <nav className="navbar bg-navbar fixed-top">
-        <div className="col-lg-2 p-0">
+        
+        <nav className="navbar bg-navbar fixed-top">
+        <div className="col-1 p-0">
           <a className="navbar-brand" href="#">Portfolio David Torta Olah</a>
         </div>
         <div className="col-1 text-white responsive-navbar">
@@ -30,7 +31,27 @@ export const Navbar = ({handleLanguage}) => {
           <a href="#sobremi">Sobre mi</a>
         </div>
 
-        <button className="dropdown boton-responsive button col-md-1">
+        <button className="dropdown navbar-toggler boton-responsive">
+        
+            <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            </a>
+            <div className="dropdown-menu fondo-card">
+              <a className="dropdown-item text-white" href="#home">Inicio</a>
+              <a className="dropdown-item text-white" href="#proyectos">Proyectos</a>
+              <a className="dropdown-item text-white" href="#sobremi">Sobre mi</a>
+              <a className="dropdown-item button px-3 pb-1 mx-3" href="#" role="button" onClick={handleLanguage}>ENG</a>
+        </div>
+      </button>
+        
+        <div className="col-1 p-0 responsive-navbar">
+          <button className="button" onClick={handleLanguage}>ENG</button>
+        </div>
+
+        {/** BOTON QUE APARECE CUANDO LA PANTALLA ES MUY PEQUEÑA*/}
+
+    <div className="d-flex justify-content-center">
+    <button className="dropdown navbar-toggler mini-boton-responsive">
+        
         <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
         </a>
         <div className="dropdown-menu fondo-card">
@@ -38,14 +59,14 @@ export const Navbar = ({handleLanguage}) => {
           <a className="dropdown-item text-white" href="#proyectos">Proyectos</a>
           <a className="dropdown-item text-white" href="#sobremi">Sobre mi</a>
           <a className="dropdown-item button px-3 pb-1 mx-3" href="#" role="button" onClick={handleLanguage}>ENG</a>
-        </div>
-      </button>
-        
-        <div className="col-1 p-0 responsive-navbar">
-          <button className="button" onClick={handleLanguage}>ENG</button>
-        </div>
-    </nav>
     </div>
+  </button>
+    </div>
+    </nav>
+        
+      
+    </div>
+    
     </div>
   )
 }

@@ -12,6 +12,10 @@ import { Tecnologias } from './Tecnologias'
 import { Draw } from './Draw'
 import { Footer } from './Footer'
 import { ResponsiveTechnologies } from './ResponsiveTechnologies'
+import { MobileTechonologies } from './MobileTechonologies'
+import { Technologies } from './Technologies'
+import { EngResponsiveTechnologies } from './EngResponsiveTechnologies'
+import { EngMobileTechonologies } from './EngMobileTechnologies'
 
 export const Ui = () => {
 
@@ -40,8 +44,9 @@ export const Ui = () => {
               <ParticleBackground />
               </div>
               <Home />
-              <Tecnologias />
+              <Tecnologias/>
               <ResponsiveTechnologies />
+              <MobileTechonologies />
               <About />
               <Proyectos />
               <Footer />
@@ -53,11 +58,16 @@ export const Ui = () => {
               <NavbarEng handleLanguage={handleLanguage}/>
             </div>
 
-            <div className='container-fluid p-0'>
-            <ParticleBackground />
+            <div className='container-fluid p-0 responsive-background'>
+            <div className='particles'>
+              <ParticleBackground />
+              </div>
               <HomeEng />
-              <ProyectosEng />
+              <Technologies />
+              <EngResponsiveTechnologies />
+              <EngMobileTechonologies />
               <AboutEng />
+              <ProyectosEng />
               <Footer />
             </div>
             </>

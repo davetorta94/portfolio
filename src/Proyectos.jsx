@@ -4,13 +4,11 @@ import playerpic from './images/captura-reproductor.png'
 
 export const Proyectos = () => {
 
- 
-  
   return (
     <>
     
    
-      <div className="container-fluid fondo-hor animate__animated animate__fadeInLeft sombrita mt-4 mx-xs-0" id='proyectos'>
+      <div className="container-fluid fondo-hor animate__animated animate__fadeInLeft  mt-4 mx-xs-0" id='proyectos'>
       <div className="row d-flex justify-content-center mt-4 text-center text-white mb-4 pt-4">
 
               <h4>ALGUNOS DE MIS PROYECTOS</h4>
@@ -40,3 +38,4 @@ export const Proyectos = () => {
   )
 }
 
+// he quitado la clase sombrita del primer div y he comentado en styles la de fondo-hor

@@ -3,7 +3,7 @@ import {motion, useInView, useAnimation} from "framer-motion";
 import { TypeAnimation } from 'react-type-animation';
 
 
-export const ResponsiveTechnologies = () => {
+export const EngResponsiveTechnologies = () => {
 
     const ref = useRef(null);
     const isInView = useInView(ref);
@@ -27,7 +27,7 @@ export const ResponsiveTechnologies = () => {
             <div className="col-6 d-flex text-center justify-content-center text-light">
                 <h4><TypeAnimation
                       sequence={[
-                        "MIS TECNOLOGÍAS",
+                        "THE TECH I USE",
                         500,
                        
                         

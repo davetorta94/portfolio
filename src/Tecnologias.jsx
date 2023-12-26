@@ -44,7 +44,7 @@ export const Tecnologias = () => {
                         
                       ]}
                       speed={20}
-                      
+                      cursor={false}
                      
                     /></h4>
             </div>

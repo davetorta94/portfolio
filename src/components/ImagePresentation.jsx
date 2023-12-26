@@ -21,7 +21,7 @@ export const ImagePresentation = () => {
   
 
   return (
-    <motion.div className="col-xl-4 col-lg-12 col-md-12 mb-sm-5 d-flex justify-content-center"
+    <motion.div className="col-xl-4 col-lg-12 col-md-12  profilepic-container d-flex justify-content-center"
                 ref={ref}
                 variants={{
                   hidden: {opacity: 0, x: 100},

@@ -26,7 +26,7 @@ export const Home = () => {
 
   return (
     <>
-    <div className="container-fluid pt-sm-1 mt-5 mx-0 mx-xs-0" id='home'>
+    <div className="container-fluid pt-sm-1 mt-5" id='home'>
 
         
 
@@ -44,6 +44,12 @@ export const Home = () => {
               <div className="animacion-grande">
                 <h2>
                     <TypeAnimation
+                      style={{
+                        display: 'block',
+                        height: '100px',
+                        marginBottom: '0px',
+                        paddingBottom: '0px',
+                      }}
                       sequence={[
                         "¡Hola! Me llamo David Torta",
                         1000,
@@ -62,6 +68,12 @@ export const Home = () => {
               <div className="animacion-responsive">
                 <h4>
                     <TypeAnimation
+                      style={{
+                        display: 'block',
+                        height: '100px',
+                        marginTop: '100px',
+                        
+                      }}
                       sequence={[
                         "¡Hola! Me llamo David Torta",
                         1000,
