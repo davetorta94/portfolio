@@ -40,7 +40,7 @@ export const NavbarEng = ({handleLanguage}) => {
 
        {/** BOTON QUE APARECE CUANDO LA PANTALLA ES MUY PEQUEÑA*/}
 
-   <div className="d-flex justify-content-center">
+   <div className="col-12 d-flex justify-content-center">
    <button className="dropdown navbar-toggler mini-boton-responsive">
        
        <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
