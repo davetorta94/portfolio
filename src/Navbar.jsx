@@ -22,7 +22,7 @@ export const Navbar = ({handleLanguage}) => {
           <a className="navbar-brand" href="#">Portfolio David Torta Olah</a>
         </div>
         <div className="col-1 text-white responsive-navbar">
-          <a href="#home">Inicio</a>
+          <a href="#inicio">Inicio</a>
         </div>
         <div className="col-1 text-white responsive-navbar">
           <a href="#proyectos">Proyectos</a>
@@ -36,9 +36,9 @@ export const Navbar = ({handleLanguage}) => {
             <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
             </a>
             <div className="dropdown-menu fondo-card">
-              <a className="dropdown-item text-white" href="#home">Inicio</a>
+              <a className="dropdown-item text-white" href="#inicio">Inicio</a>
               <a className="dropdown-item text-white" href="#proyectos">Proyectos</a>
-              <a className="dropdown-item text-white" href="#sobremi">Sobre mi</a>
+              <a className="dropdown-item text-white" href="#sobremidos">Sobre mi</a>
               <a className="dropdown-item button px-3 pb-1 mx-3" href="#" role="button" onClick={handleLanguage}>ENG</a>
         </div>
       </button>

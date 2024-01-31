@@ -26,7 +26,7 @@ export const Home = () => {
 
   return (
     <>
-    <div className="container-fluid pt-sm-1 mt-5" id='home'>
+    <div className="container-fluid pt-sm-1 mt-5" id='inicio'>
 
         
 

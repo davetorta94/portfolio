@@ -16,10 +16,10 @@ export const NavbarEng = ({handleLanguage}) => {
          <a href="#home">Home</a>
        </div>
        <div className="col-1 text-white responsive-navbar">
-         <a href="#proyectos">Projects</a>
+         <a href="#projects">Projects</a>
        </div>
        <div className="col-1 text-white responsive-navbar">
-         <a href="#sobremi">About</a>
+         <a href="#about">About</a>
        </div>
 
        <button className="dropdown navbar-toggler boton-responsive">
@@ -28,8 +28,8 @@ export const NavbarEng = ({handleLanguage}) => {
            </a>
            <div className="dropdown-menu fondo-card">
              <a className="dropdown-item text-white" href="#home">Home</a>
-             <a className="dropdown-item text-white" href="#proyectos">Projects</a>
-             <a className="dropdown-item text-white" href="#sobremi">About</a>
+             <a className="dropdown-item text-white" href="#projects">Projects</a>
+             <a className="dropdown-item text-white" href="#aboutmetwo">About</a>
              <a className="dropdown-item button px-3 pb-1 mx-3" href="#" role="button" onClick={handleLanguage}>ESP</a>
        </div>
      </button>
@@ -47,8 +47,8 @@ export const NavbarEng = ({handleLanguage}) => {
        </a>
        <div className="dropdown-menu fondo-card">
          <a className="dropdown-item text-white" href="#home">Home</a>
-         <a className="dropdown-item text-white" href="#proyectos">Projects</a>
-         <a className="dropdown-item text-white" href="#sobremi">About</a>
+         <a className="dropdown-item text-white" href="#projects">Projects</a>
+         <a className="dropdown-item text-white" href="#aboutmetwo">About</a>
          <a className="dropdown-item button px-3 pb-1 mx-3" href="#" role="button" onClick={handleLanguage}>ESP</a>
    </div>
  </button>

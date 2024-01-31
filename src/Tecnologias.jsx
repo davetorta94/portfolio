@@ -34,7 +34,8 @@ export const Tecnologias = () => {
                 }}
                 initial="hidden"
                 animate={containerControls}
-                transition={{ease: "easeIn", duration: 2}}>
+                transition={{ease: "easeIn", duration: 2}}
+                id="sobremi">
         <div className="row d-flex justify-content-center mb-5">
             <div className="col-6 d-flex justify-content-center text-light">
                 <h4><TypeAnimation

@@ -31,12 +31,13 @@ export const AboutEng = () => {
     }}
       initial="hide"
       animate={aboutControls}
-      transition={ {ease: "easeOut", duration: 1} }>
+      transition={ {ease: "easeOut", duration: 1} }
+      id="aboutmetwo">
         <div className="row text-white d-flex justify-content-center animate__animated animate__slideInDown">
             <h4>ABOUT ME</h4>
         </div>
 
-        <div className="row fondo-hor text-white d-flex justify-content-center mt-2 mb-5 sombrita animate__animated animate__slideInDown" id="sobremi">
+        <div className="row bg-about text-white d-flex justify-content-around mt-2 mb-5 pt-2 sombrita animate__animated animate__slideInDown" id="sobremi">
           <div className="col-lg-4 col-md-8 col-sm-10 pt-2"><p>My name is David Torta. <br /> <br />
             My experience with web development begins with the pandemic, when I signed up for a programming course funded by the European Union. It was then when I discovered my passion for this world, and since then I have been training in it.
             <br /><br />
