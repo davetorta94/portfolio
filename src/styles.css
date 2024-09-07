@@ -238,6 +238,14 @@ line {
       padding-top: 100px;
   }
 
+  #projects{
+    height: 1000px;
+  }
+
+  #projects h4{
+      padding-top: 100px;
+  }
+
   .mobile-punto {
     display: none;
   }

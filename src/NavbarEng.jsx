@@ -41,7 +41,7 @@ export const NavbarEng = ({handleLanguage}) => {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-white" href="#about">
+                    <a className="nav-link text-white" href="#aboutmetwo">
                       About
                     </a>
                   </li>
