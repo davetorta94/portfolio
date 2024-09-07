@@ -30,17 +30,17 @@ export const Navbar = ({handleLanguage}) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav w-100 justify-content-around">
             <li className="nav-item">
-              <a className="nav-link text-white" href="#home">
+              <a className="nav-link text-white" href="#inicio">
                 Inicio
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#projects">
+              <a className="nav-link text-white" href="#proyectos">
                 Proyectos
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#about">
+              <a className="nav-link text-white" href="#sobremidos">
                 Sobre Mi
               </a>
             </li>
