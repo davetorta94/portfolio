@@ -31,17 +31,17 @@ export const Navbar = ({handleLanguage}) => {
           <ul className="navbar-nav w-100 justify-content-around">
             <li className="nav-item">
               <a className="nav-link text-white" href="#home">
-                Home
+                Inicio
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link text-white" href="#projects">
-                Projects
+                Proyectos
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link text-white" href="#about">
-                About
+                Sobre Mi
               </a>
             </li>
             {/* Language Toggle Button */}
