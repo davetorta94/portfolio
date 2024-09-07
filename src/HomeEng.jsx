@@ -2,10 +2,7 @@ import React, { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
 import { TypeAnimation } from 'react-type-animation';
 import { ImagePresentation } from "./components/ImagePresentation";
-import { Cohete } from "./components/Cohete";
-import { Draw } from "./Draw";
-import { Star } from "./Star";
-import { ResponsiveStar } from "./ResponsiveStar";
+
 
 
 

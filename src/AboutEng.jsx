@@ -1,9 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
-import { IconContext } from "react-icons"
-import { GoMarkGithub } from "react-icons/go";
-import { IoLogoLinkedin } from "react-icons/io";
-import { ImagePresentation } from "./components/ImagePresentation";
+
 
 
 export const AboutEng = () => {
@@ -42,7 +39,7 @@ export const AboutEng = () => {
             My experience with web development begins with the pandemic, when I signed up for a programming course funded by the European Union. It was then when I discovered my passion for this world, and since then I have been training in it.
             <br /><br />
             Before that I graduated in Advertising and Public Relations at the University of Alicante, because before discovering programming, I wanted to dedicate myself to communication. <br /> <br />
-            Thanks to the knowledge I acquired in my degree, plus the ones I have been adding to my repertoire through programming courses and practice, I think I can be a good asset for any company, since I can not only adapt the messages and content of the webs to the target, but I can also materialize these pages, using HTML5, CSS, JavaScript, Bootstrap and React. This portfolio has been made with Bootstrap and React <br /> <br /> Currently I am learning Node.js and MERN</p>
+            Thanks to the knowledge I acquired in my degree, plus the ones I have been adding to my repertoire through programming courses and practice, I think I can be a good asset for any company, since I can not only adapt the messages and content of the webs to the target, but I can also materialize these pages, using HTML5, CSS, JavaScript, Bootstrap and React. This portfolio has been made with Bootstrap and React.</p>
             </div>
         
           {/*<ImagePresentation />*/}

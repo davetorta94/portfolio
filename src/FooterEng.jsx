@@ -3,7 +3,7 @@ import { GoMarkGithub } from "react-icons/go";
 import { IoLogoLinkedin } from "react-icons/io";
 import { SiGmail } from "react-icons/si";
 
-export const Footer = () => {
+export const FooterEng = () => {
   return (
     <div className="container-fluid">
         
@@ -21,7 +21,7 @@ export const Footer = () => {
             </IconContext.Provider></a>
           </div>
           <div className="col-1">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=david.torta.olah@gmail.com&su=¿Trabajamos%20juntos?&body=Hola,%20quiero%20comunicarme%20contigo." target='_blank'>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=david.torta.olah@gmail.com&su=Shall%20we%20work%20together?&body=Hi,%20I%20would%20like%20to%20contact%20you." target='_blank'>
             <IconContext.Provider value={{size: "2em"}}>
                 <SiGmail />
             </IconContext.Provider></a>

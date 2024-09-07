@@ -9,17 +9,17 @@ import { HomeEng } from './HomeEng'
 import { NavbarEng } from './NavbarEng'
 import {ParticleBackground} from './ParticleBackground'
 import { Tecnologias } from './Tecnologias'
-import { Draw } from './Draw'
 import { Footer } from './Footer'
 import { ResponsiveTechnologies } from './ResponsiveTechnologies'
 import { MobileTechonologies } from './MobileTechonologies'
 import { Technologies } from './Technologies'
 import { EngResponsiveTechnologies } from './EngResponsiveTechnologies'
 import { EngMobileTechonologies } from './EngMobileTechnologies'
+import { FooterEng } from './FooterEng'
 
 export const Ui = () => {
 
-  const [spanish, setSpanish] = useState(true)
+  const [spanish, setSpanish] = useState(false)
 
 
   const handleLanguage = () => {
@@ -41,7 +41,7 @@ export const Ui = () => {
 
             <div className='container-fluid p-0 responsive-background'>
               <div className='particles'>
-              <ParticleBackground />
+                <ParticleBackground />
               </div>
               <Home />
               <Tecnologias/>
@@ -59,7 +59,7 @@ export const Ui = () => {
             </div>
 
             <div className='container-fluid p-0 responsive-background'>
-            <div className='particles'>
+              <div className='particles'>
               <ParticleBackground />
               </div>
               <HomeEng />
@@ -68,7 +68,7 @@ export const Ui = () => {
               <EngMobileTechonologies />
               <AboutEng />
               <ProyectosEng />
-              <Footer />
+              <FooterEng />
             </div>
             </>
           }
