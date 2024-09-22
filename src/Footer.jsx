@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si";
 
 export const Footer = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid mt-1">
         
         <div className="row fondo-card text-light justify-content-center mt-2 sombrita animate__animated animate__slideInDown sombrita">
           <div className="col-1">

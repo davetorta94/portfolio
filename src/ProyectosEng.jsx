@@ -8,7 +8,7 @@ export const ProyectosEng = () => {
   return (
     <>
     
-    <div className="container-fluid fondo-hor animate__animated animate__fadeInLeft  mt-4 mx-xs-0" id='projects'>
+    <div className="container-fluid fondo-hor animate__animated animate__fadeInLeft mt-4 mb-lg-5 mb-md-0 mx-xs-0" id='projects'>
       <div className="row d-flex justify-content-center mt-4 text-center text-white pt-4 pb-0 mb-0">
 
               <h4>SOME OF MY PROJECTS</h4>
@@ -19,7 +19,7 @@ export const ProyectosEng = () => {
             <div className="col-lg-12 text-white text-center mx-lg-5 mx-md-0 mt-md-2 pt-3">
           <Parallax scale={[1,1.5]}>
                 <h4 className='pb-2'>Marketing Agency</h4>
-                <a href="https://65cbb1260aab9905f227bee6--aesthetic-faloodeh-62b027.netlify.app/" target='_blank'><img src={myfpic} alt="" className='linkpic' ></img></a>
+                <a href="https://aesthetic-faloodeh-62b027.netlify.app/" target='_blank'><img src={myfpic} alt="" className='linkpic' ></img></a>
           </Parallax>
             </div>
 

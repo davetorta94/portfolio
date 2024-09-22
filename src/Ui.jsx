@@ -19,7 +19,7 @@ import { FooterEng } from './FooterEng'
 
 export const Ui = () => {
 
-  const [spanish, setSpanish] = useState(false)
+  const [spanish, setSpanish] = useState(true)
 
 
   const handleLanguage = () => {
