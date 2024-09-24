@@ -35,7 +35,7 @@ export const AboutEng = () => {
         </div>
 
         <div className="row bg-about text-white d-flex justify-content-around mt-2 mb-5 pt-2 sombrita animate__animated animate__slideInDown" id="sobremi">
-          <div className="col-lg-4 col-md-8 col-sm-10 pt-2"><p>My name is David Torta. <br /> <br />
+          <div className="col-lg-4 col-md-8 col-sm-10 pt-2 about-text"><p>My name is David Torta. <br /> <br />
             My experience with web development begins with the pandemic, when I signed up for a programming course funded by the European Union. It was then when I discovered my passion for this world, and since then I have been training in it.
             <br /><br />
             Before that I graduated in Advertising and Public Relations at the University of Alicante, because before discovering programming, I wanted to dedicate myself to communication. <br /> <br />

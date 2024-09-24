@@ -105,6 +105,10 @@ line {
   background-size: 10px 10px;
 }*/
 
+.about-text{
+  font-size: 18px;
+}
+
 .linkpic{
     width: 25rem;
     height: auto;
@@ -280,6 +284,10 @@ line {
 
     .fondo-hor{
       margin-bottom: 250px;
+    }
+
+    .about-text{
+      font-size: 1rem;
     }
 
     /*.overflow-tecnologias {
