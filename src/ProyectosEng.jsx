@@ -14,7 +14,7 @@ export const ProyectosEng = () => {
               <h4>SOME OF MY PROJECTS</h4>
 
       </div>
-      <div className="row project-images mx-xl-5 pb-5 mx-sm-4 mx-md-4 mt-5 pt-2">
+      <div className="row project-images mx-xl-5 pb-5 mx-sm-4 mx-md-4 mt-3 pt-2">
 
             <div className="col-lg-12 text-white text-center mx-lg-5 mx-md-0 mt-md-2 pt-3">
           <Parallax scale={[1,1.5]}>

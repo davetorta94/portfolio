@@ -6,8 +6,14 @@ import { SiGmail } from "react-icons/si";
 export const FooterEng = () => {
   return (
     <div className="container-fluid">
+
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center text-center text-white pt-5 px-0 pb-2">
+            <h2>Contact</h2>
+          </div>
+        </div>
         
-        <div className="row fondo-card text-light justify-content-center mt-2 sombrita animate__animated animate__slideInDown sombrita">
+        <div className="row fondo-card text-light justify-content-around mt-2 sombrita animate__animated animate__slideInDown sombrita">
           <div className="col-1">
                 <a href="https://github.com/davetorta94" target='_blank'>
                 <IconContext.Provider value={{size: "2em"}}>
