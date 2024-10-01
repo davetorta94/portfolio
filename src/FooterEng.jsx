@@ -14,19 +14,19 @@ export const FooterEng = () => {
         </div>
         
         <div className="row fondo-card text-light justify-content-around mt-2 sombrita animate__animated animate__slideInDown sombrita">
-          <div className="col-1">
+          <div className="col-1 px-0">
                 <a href="https://github.com/davetorta94" target='_blank'>
                 <IconContext.Provider value={{size: "2em"}}>
                   <GoMarkGithub />
                 </IconContext.Provider></a>
             </div>
-          <div className="col-1">
+          <div className="col-1 px-0">
             <a href="https://www.linkedin.com/in/david-torta-olah-b50b4819b/" target='_blank'>
             <IconContext.Provider value={{size: "2em"}}>
               <IoLogoLinkedin />
             </IconContext.Provider></a>
           </div>
-          <div className="col-1">
+          <div className="col-1 px-0">
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=david.torta.olah@gmail.com&su=Shall%20we%20work%20together?&body=Hi,%20I%20would%20like%20to%20contact%20you." target='_blank'>
             <IconContext.Provider value={{size: "2em"}}>
                 <SiGmail />

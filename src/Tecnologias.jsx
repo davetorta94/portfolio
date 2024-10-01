@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
-import { TypeAnimation } from 'react-type-animation';
+
 
 
 export const Tecnologias = () => {
@@ -38,16 +38,7 @@ export const Tecnologias = () => {
                 id="sobremi">
         <div className="row d-flex justify-content-center mb-5">
             <div className="col-6 d-flex justify-content-center text-light">
-                <h4><TypeAnimation
-                      sequence={[
-                        "LAS TECNOLOGÍAS CON LAS QUE TRABAJO",
-                        2000,
-                        
-                      ]}
-                      speed={20}
-                      cursor={false}
-                     
-                    /></h4>
+                <h4>LAS TECNOLOGÍAS CON LAS QUE TRABAJO</h4>
             </div>
         </div>
         <motion.div className="row d-flex justify-content-lg-between justify-content-md-around"

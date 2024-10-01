@@ -49,7 +49,7 @@ export const Home = () => {
                       sequence={[
                         "¡Hola! Me llamo David Torta",
                         1000,
-                        "y soy un  front-end dev especializado en React",
+                        "y soy desarrollador web",
                         1000,
                         "¿En que puedo ayudarte?",
                         1000,
@@ -73,9 +73,9 @@ export const Home = () => {
                       sequence={[
                         "¡Hola! Me llamo David Torta",
                         1000,
-                        "y soy un  front-end dev especializado en React",
+                        "y soy desarrollador web",
                         1000,
-                        "¿En que puedo ayudarte?",
+                        "¿En qué puedo ayudarte?",
                         1000,
                       ]}
                       speed={50}

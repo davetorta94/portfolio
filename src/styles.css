@@ -270,17 +270,17 @@ line {
 
   @media only screen and (max-width : 838px){
 
-    .particles{
+    /*.particles{
       display: none;
-    }
+    }*/
 
-    .responsive-background{
+    /*.responsive-background{
       background-color: #18131f;
       opacity: 1;
       background-image:  radial-gradient(#ccff00 0.5px, transparent 0.5px), radial-gradient(#ccff00 0.5px, #18131f 0.5px);
       background-size: 20px 20px;
       background-position: 0 0,10px 10px;
-    }
+    }*/
 
 
     .about-text{

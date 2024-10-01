@@ -38,16 +38,7 @@ export const Technologies = () => {
                 id="about">
         <div className="row d-flex justify-content-center mb-5">
             <div className="col-6 d-flex justify-content-center text-light">
-                <h4><TypeAnimation
-                      sequence={[
-                        "THE TECH I USE",
-                        2000,
-                        
-                      ]}
-                      speed={20}
-                      cursor={false}
-                     
-                    /></h4>
+                <h4>THE TECH I USE</h4>
             </div>
         </div>
         <motion.div className="row d-flex justify-content-lg-between justify-content-md-around"

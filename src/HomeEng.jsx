@@ -49,7 +49,7 @@ export const HomeEng = () => {
                       sequence={[
                         "Hi! My name is David Torta",
                         1000,
-                        "I am a frontend developer specialized in React",
+                        "I'm a web developer",
                         1000,
                         "How can I help you?",
                         1000,

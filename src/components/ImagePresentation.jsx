@@ -30,12 +30,9 @@ export const ImagePresentation = () => {
                 initial="hidden"
                 animate={photoControls}
                 transition={ {ease: "easeOut", duration: 2} }>
-               <div>
+                <div>
                  <img src={profilepic} className='profilepic' alt="foto"></img>
-                    {/*<div className="card-body fondo-card text-white border-top-1">
-                       <p className="card-text">David Torta Olah</p>
-                     </div>*/}
-                 </div>
+                </div>
     </motion.div>
   )
 }
