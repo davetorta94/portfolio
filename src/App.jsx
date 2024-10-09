@@ -1,10 +1,14 @@
 import React from 'react'
-import { Ui } from './Ui'
+import { AppRouter } from './router/AppRouter'
+import { BrowserRouter } from 'react-router-dom'
+//import { Ui } from './Ui'
 
 export const App = () => {
   return (
     <>
-        <Ui />
+      <BrowserRouter>
+       <AppRouter />
+      </BrowserRouter>
     </>
   )
 }

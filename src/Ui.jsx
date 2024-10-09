@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { About } from './About'
 import {AboutEng} from './AboutEng'
 import { Proyectos } from './Proyectos'
@@ -16,19 +16,30 @@ import { Technologies } from './Technologies'
 import { EngResponsiveTechnologies } from './EngResponsiveTechnologies'
 import { EngMobileTechonologies } from './EngMobileTechnologies'
 import { FooterEng } from './FooterEng'
+import {PrivacyBanner} from './components/PrivacyBanner'
+import {PrivacyBannerEng} from './components/PrivacyBannerEng'
 
-export const Ui = () => {
-
-  const [spanish, setSpanish] = useState(true)
+export const Ui = ({ handleLanguage, spanish }) => {
 
 
-  const handleLanguage = () => {
-    if (spanish){
-      setSpanish(false)
-    } else {
-      setSpanish(true)
+  const [isBannerVisible, setIsBannerVisible] = useState(false);
+
+  // Comprobar si el usuario ya ha aceptado la política de privacidad
+  useEffect(() => {
+    const privacyAccepted = localStorage.getItem('privacyAccepted') === 'true';
+    if (!privacyAccepted) {
+      setIsBannerVisible(true);
     }
-  }
+  }, []);
+
+  // Función para aceptar la política y ocultar el banner
+  const acceptPrivacyPolicy = () => {
+    localStorage.setItem('privacyAccepted', 'true');
+    setIsBannerVisible(false);
+  };
+
+  
+  
 
   return (
     <>  
@@ -43,13 +54,16 @@ export const Ui = () => {
               <div className='particles'>
                 <ParticleBackground />
               </div>
-              <Home />
+              <Home isBannerVisible={isBannerVisible}/>
               <Tecnologias/>
               <ResponsiveTechnologies />
               <MobileTechonologies />
               <About />
               <Proyectos />
               <Footer />
+              {isBannerVisible && (
+                <PrivacyBanner acceptPrivacyPolicy={acceptPrivacyPolicy} />
+              )}
             </div>
             </>
             :
@@ -62,13 +76,16 @@ export const Ui = () => {
               <div className='particles'>
               <ParticleBackground />
               </div>
-              <HomeEng />
+              <HomeEng isBannerVisible={isBannerVisible}/>
               <Technologies />
               <EngResponsiveTechnologies />
               <EngMobileTechonologies />
               <AboutEng />
               <ProyectosEng />
               <FooterEng />
+              {isBannerVisible && (
+                <PrivacyBannerEng acceptPrivacyPolicy={acceptPrivacyPolicy} />
+              )}
             </div>
             </>
           }

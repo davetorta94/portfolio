@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
 import profilepic from '../images/fotoperfil.webp';
+import { ContactButton } from "./ContactButton";
 
 
-export const ImagePresentation = () => {
+export const ImagePresentation = ({isBannerVisible}) => {
 
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -21,19 +22,46 @@ export const ImagePresentation = () => {
   
 
   return (
-    <motion.div className="col-xl-4 col-lg-12 col-md-12  profilepic-container d-flex justify-content-center"
-                ref={ref}
-                variants={{
-                  hidden: {opacity: 0, y: 100},
-                  shown: {opacity: 1, y: 0},
-                }}
-                initial="hidden"
-                animate={photoControls}
-                transition={ {ease: "easeOut", duration: 2} }>
-                <div>
-                 <img src={profilepic} className='profilepic' alt="foto"></img>
-                </div>
-    </motion.div>
+    <>
+
+    
+        <motion.div className="col-xl-4 col-lg-12 col-md-12 profilepic-container d-flex justify-content-center"
+                      ref={ref}
+                      variants={{
+                        hidden: {opacity: 0, y: 100},
+                        shown: {opacity: 1, y: 0},
+                      }}
+                      initial="hidden"
+                      animate={photoControls}
+                      transition={ {ease: "easeOut", duration: 2} }>
+                      <div>
+                       <img src={profilepic} className='profilepic' alt="foto"></img>
+
+                       {
+                        isBannerVisible ? (
+
+                          <></>
+
+                        )
+                        :
+                        (
+                          <div className="mt-2 d-flex justify-content-center">
+                           <ContactButton />
+                          </div>
+                        )
+                       }
+                       
+                      </div>
+          </motion.div>
+    
+
+    
+      
+          
+    
+    </>
+    
   )
 }
 
+// <ContactButton />

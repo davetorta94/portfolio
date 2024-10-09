@@ -6,7 +6,7 @@ import { ImagePresentation } from "./components/ImagePresentation";
 
 
 
-export const HomeEng = () => {
+export const HomeEng = ({isBannerVisible}) => {
 
   const ref = useRef(null);
     const isInView = useInView(ref);
@@ -89,7 +89,7 @@ export const HomeEng = () => {
   
             </motion.div>
             
-            <ImagePresentation />
+            <ImagePresentation isBannerVisible={isBannerVisible}/>
            
              
             

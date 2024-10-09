@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { ImagePresentation } from "./components/ImagePresentation";
 
 
-export const Home = () => {
+export const Home = ({isBannerVisible}) => {
 
     const ref = useRef(null);
     const isInView = useInView(ref);
@@ -85,21 +85,22 @@ export const Home = () => {
                 </h4>
               </div>
             
-              
+              <div className="row punto"> 
+          
+          
+         
+        </div>
   
             </motion.div>
             
-            <ImagePresentation />
+            <ImagePresentation isBannerVisible={isBannerVisible}/>
+
+            
            
              
             
         </motion.div>
-        <div className="row punto"> 
-
-          {/* <Star />*/}    
-         {/* <ResponsiveStar />*/}
-          {/*<MobileStar />*/}
-        </div>
+        
       </div>
     
 

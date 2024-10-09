@@ -13,6 +13,69 @@ a:hover {
   color: #CCFF00;
 }
 
+.privacy-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.privacy-banner p {
+  display: inline;
+}
+
+.privacy-banner button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.contenedor-formulario{
+  margin-top: 250px;
+}
+
+.titulo-formulario h4{
+  color: #fff;
+  font-weight: bolder;
+  font-size: xx-large;
+  border: 0px;
+  border-radius: 4px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.borde-formulario {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: rgb(24,19,31);
+  background: linear-gradient(90deg, rgba(24,19,31,1) 0%, rgba(149,94,169,1) 35%, rgba(176,157,202,1) 100%);
+}
+
+.boton-formulario{
+  background-color: #cafdfd;
+  color: #000;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;;
+  border-radius: 30px;
+  padding: 8px 32px;
+  width: 50%;
+}
+
+.boton-formulario:hover{
+  background-color: #73f7f7;
+  color: #fff;
+  text-decoration: none;
+}
+
+
 .home{
   margin-top: 150px;
   height: 500px;
