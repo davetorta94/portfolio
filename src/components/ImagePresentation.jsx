@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
-import profilepic from '../images/fotoperfil.jpg';
+import profilepic from '../images/fotoperfil.webp';
 
 
 export const ImagePresentation = () => {

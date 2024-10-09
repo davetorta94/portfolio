@@ -1,6 +1,6 @@
 import { Parallax } from 'react-scroll-parallax';
-import todopic from './images/captura-todo.png'
-import myfpic from './images/captura-myf.png'
+import todopic from './images/captura-todo.webp'
+import myfpic from './images/captura-myf.webp'
 
 export const Proyectos = () => {
 
