@@ -1,54 +1,90 @@
-import { useState } from 'react'
-import { Route, Routes, Navigate } from 'react-router-dom'
-import { Ui } from '../Ui'
-import { ContactPage } from '../components/ContactPage'
-import { useForm } from '../hooks/useForm'
+import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Ui } from '../Ui';
+import { ContactPage } from '../components/ContactPage';
+import emailjs from 'emailjs-com';
+import { getEnvVariables } from '../helpers/getEnvVariables';
+import { useForm } from '../hooks/useForm';
 
+// Desestructuramos las variables de entorno
+const { YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_USER_ID } = getEnvVariables();
 
+// Inicializamos los campos del formulario de contacto
 const contactFields = {
-    name: '',
-    email: ''
-  }
-
-
+  name: '',
+  email: '',
+  message: '',
+};
 
 export const AppRouter = () => {
+  const [spanish, setSpanish] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
 
-    const [spanish, setSpanish] = useState(true);
+  // Utilizamos el hook useForm para manejar los campos del formulario
+  const { onInputChange, name, email, message } = useForm(contactFields);
 
-    const {onInputChange, name, email} = useForm(contactFields);
+  // Cambiar idioma
+  const handleLanguage = () => {
+    setSpanish(!spanish);
+  };
 
+  // Manejar el envío del formulario
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-
-
- const handleLanguage = () => {
-   if (spanish){
-     setSpanish(false)
-   } else {
-     setSpanish(true)
-   }
- }
-
-    const [submitted, setSubmitted] = useState(false);
-    const handleSubmit = (e) =>{
-        e.preventDefault();
-        setSubmitted(true);     
+    // Validamos que todos los campos estén completos
+    if (!name || !email || !message) {
+      alert('Por favor, rellena todos los campos antes de enviar.');
+      return;
     }
 
+    // Definimos los parámetros del template de email
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
 
+    // Enviamos el correo usando emailjs
+    emailjs
+      .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams, YOUR_USER_ID)
+      .then((result) => {
+        console.log('Correo enviado:', result.text);
+        alert('Correo enviado correctamente');
+        setSubmitted(true);
+      })
+      .catch((error) => {
+        console.log('Error al enviar el correo:', error.text);
+        alert('Hubo un error al enviar el correo');
+      });
+  };
 
   return (
     <>
-    
-    <Routes>
+      <Routes>
+        {/* Ruta principal */}
+        <Route
+          path='/'
+          element={<Ui handleLanguage={handleLanguage} spanish={spanish} />}
+        />
 
-            <Route path='/' element={ <Ui handleLanguage={handleLanguage} spanish={spanish}/>}/>
-            <Route path="/contact" element={<ContactPage handleSubmit={handleSubmit} handleLanguage={handleLanguage} spanish={spanish} submitted={submitted} onInputChange={onInputChange} name={name} email={email}/>} />
-
-    </Routes>
-    
-    
-    
+        {/* Ruta para el contacto */}
+        <Route
+          path='/contact'
+          element={
+            <ContactPage
+              handleSubmit={handleSubmit}
+              handleLanguage={handleLanguage}
+              spanish={spanish}
+              submitted={submitted}
+              onInputChange={onInputChange}
+              name={name}
+              email={email}
+              message={message}
+            />
+          }
+        />
+      </Routes>
     </>
-)
-}
+  );
+};

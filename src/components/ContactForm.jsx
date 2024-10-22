@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import emailjs from 'emailjs-com';
 
-export const ContactForm = ({handleSubmit, onInputChange, name, email, handleLanguage, spanish}) => {
+export const ContactForm = ({handleSubmit, onInputChange, name, email, message, handleLanguage, spanish}) => {
   return (
     <>
         {
@@ -20,7 +21,8 @@ export const ContactForm = ({handleSubmit, onInputChange, name, email, handleLan
                     <div className="col-6 px-0 text-center">        
                     <form className='d-flex flex-column justify-content-center' id='formulario' autoComplete='on' onSubmit={handleSubmit}>
                                 <input type="text" name='name' value={name} placeholder='  nombre' autoComplete='name'onChange={onInputChange} className='method-input justify-content-center'/>
-                                <input type="email" name='email' value={email} placeholder='  email'  autoComplete='email'onChange={onInputChange} className='method-input justify-content-center'/>     
+                                <input type="email" name='email' value={email} placeholder='  email'  autoComplete='email'onChange={onInputChange} className='method-input justify-content-center'/>
+                                <input type="text" name='message' value={message} placeholder='  message'  autoComplete='message'onChange={onInputChange} className='method-input justify-content-center'/>     
                                     <div className='text-white d-flex justify-content-between'>
                                   </div>
                                   <div className='d-flex justify-content-center'>
@@ -55,7 +57,8 @@ export const ContactForm = ({handleSubmit, onInputChange, name, email, handleLan
                     <div className="col-6 px-0 text-center">        
                     <form className='d-flex flex-column justify-content-center' id='formulario' autoComplete='on' onSubmit={handleSubmit}>
                                 <input type="text" name='name' value={name} placeholder='  name' autoComplete='name'onChange={onInputChange} className='method-input justify-content-center'/>
-                                <input type="email" name='email' value={email} placeholder='  email'  autoComplete='email'onChange={onInputChange} className='method-input justify-content-center'/>     
+                                <input type="email" name='email' value={email} placeholder='  email'  autoComplete='email'onChange={onInputChange} className='method-input justify-content-center'/>
+                                <input type="text" name='message' value={message} placeholder='  message'  autoComplete='message'onChange={onInputChange} className='method-input justify-content-center'/>       
                                     <div className='text-white d-flex justify-content-between'>
                                   </div>
                                   <div className='d-flex justify-content-center'>

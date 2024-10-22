@@ -13,6 +13,12 @@ a:hover {
   color: #CCFF00;
 }
 
+.method-input{
+  border-radius: 15px;
+  height: 2.4em;
+  background-color: #FFE5FE;
+}
+
 .privacy-banner {
   position: fixed;
   bottom: 0;

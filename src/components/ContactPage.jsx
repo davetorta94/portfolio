@@ -4,7 +4,7 @@ import { ParticleBackground } from '../ParticleBackground'
 import { ContactForm } from './ContactForm'
 import { NavbarEng } from '../NavbarEng'
 
-export const ContactPage = ({handleSubmit, onInputChange, name, email, handleLanguage, spanish}) => {
+export const ContactPage = ({handleSubmit, onInputChange, name, email, message, handleLanguage, spanish}) => {
 
 
   return (
@@ -22,7 +22,8 @@ export const ContactPage = ({handleSubmit, onInputChange, name, email, handleLan
                     spanish={spanish}
                     onInputChange={onInputChange}
                     name={name}
-                    email={email}/>
+                    email={email}
+                    message={message}/>
                 </>
             )
 
@@ -38,7 +39,8 @@ export const ContactPage = ({handleSubmit, onInputChange, name, email, handleLan
                     spanish={spanish}
                     onInputChange={onInputChange}
                     name={name}
-                    email={email}/>
+                    email={email}
+                    message={message}/>
                 </>
 
             )
