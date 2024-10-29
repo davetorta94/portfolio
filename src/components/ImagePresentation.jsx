@@ -4,7 +4,7 @@ import profilepic from '../images/fotoperfil.webp';
 import { ContactButton } from "./ContactButton";
 
 
-export const ImagePresentation = ({isBannerVisible}) => {
+export const ImagePresentation = ({isBannerVisible, privacyAccepted}) => {
 
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -46,7 +46,7 @@ export const ImagePresentation = ({isBannerVisible}) => {
                         :
                         (
                           <div className="mt-2 d-flex justify-content-center">
-                           <ContactButton />
+                           <ContactButton privacyAccepted={privacyAccepted}/>
                           </div>
                         )
                        }

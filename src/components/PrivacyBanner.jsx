@@ -1,7 +1,6 @@
 import React from 'react';
 
-export const PrivacyBanner = ({acceptPrivacyPolicy}) => {
-
+export const PrivacyBanner = ({ acceptPrivacyPolicy, onCancel }) => {
   return (
     <div style={bannerStyle}>
       <p>
@@ -11,11 +10,12 @@ export const PrivacyBanner = ({acceptPrivacyPolicy}) => {
         </a>.
       </p>
       <button onClick={acceptPrivacyPolicy} style={buttonStyle}>Aceptar</button>
+      <button onClick={onCancel} style={cancelButtonStyle}>Cancelar</button>
     </div>
   );
 };
 
-// Estilos en línea para el banner y el botón (puedes personalizarlos)
+// Estilos en línea para el banner y los botones
 const bannerStyle = {
   position: 'fixed',
   bottom: '0',
@@ -35,5 +35,12 @@ const buttonStyle = {
   cursor: 'pointer',
   marginLeft: '20px',
 };
+
+const cancelButtonStyle = {
+  ...buttonStyle, // Copia los estilos básicos del botón
+  backgroundColor: '#f44336', // Cambia el color de fondo a rojo
+  marginLeft: '10px',
+};
+
 
 

@@ -3,6 +3,8 @@ import { Navbar } from '../Navbar'
 import { ParticleBackground } from '../ParticleBackground'
 import { ContactForm } from './ContactForm'
 import { NavbarEng } from '../NavbarEng'
+import { ContactNavbar } from './ContactNavbar'
+import { EngContactNavbar } from './EngContactNavbar'
 
 export const ContactPage = ({handleSubmit, onInputChange, name, email, message, handleLanguage, spanish}) => {
 
@@ -13,7 +15,7 @@ export const ContactPage = ({handleSubmit, onInputChange, name, email, message, 
             spanish ? (
                 
                 <>
-                <Navbar 
+                <ContactNavbar 
                 handleLanguage={handleLanguage}
                 spanish={spanish}/>
                 <ParticleBackground />
@@ -30,7 +32,7 @@ export const ContactPage = ({handleSubmit, onInputChange, name, email, message, 
             : (
 
                 <>
-                <NavbarEng 
+                <EngContactNavbar 
                 handleLanguage={handleLanguage}
                 spanish={spanish}/>
                 <ParticleBackground />

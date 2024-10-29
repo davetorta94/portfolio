@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { ImagePresentation } from "./components/ImagePresentation";
 
 
-export const Home = ({isBannerVisible}) => {
+export const Home = ({isBannerVisible, privacyAccepted}) => {
 
     const ref = useRef(null);
     const isInView = useInView(ref);
@@ -93,7 +93,7 @@ export const Home = ({isBannerVisible}) => {
   
             </motion.div>
             
-            <ImagePresentation isBannerVisible={isBannerVisible}/>
+            <ImagePresentation isBannerVisible={isBannerVisible} privacyAccepted={privacyAccepted}/>
 
             
            

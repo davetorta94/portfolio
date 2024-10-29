@@ -114,13 +114,7 @@ a:hover {
   background-color:#24202b;
 }
 
-circle,
-rect,
-line {
-  stroke-width: 10px;
-  stroke-linecap: round;
-  fill: transparent;
-}
+
 
 .border-tecnologico{
   background-color: #000;

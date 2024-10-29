@@ -3,8 +3,13 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-export const ContactButton = () => {
-    const navigate = useNavigate();
+export const ContactButton = ({ privacyAccepted }) => {
+  
+  if (!privacyAccepted) {
+    return null; // Si no se acepta la privacidad, no mostramos el botón
+  }
+  
+  const navigate = useNavigate();
 
     const handleClick = () => {
       navigate('/contact'); // Redirige a la ruta de la página de contacto
