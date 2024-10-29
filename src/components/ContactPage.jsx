@@ -1,8 +1,6 @@
 import React from 'react'
-import { Navbar } from '../Navbar'
 import { ParticleBackground } from '../ParticleBackground'
 import { ContactForm } from './ContactForm'
-import { NavbarEng } from '../NavbarEng'
 import { ContactNavbar } from './ContactNavbar'
 import { EngContactNavbar } from './EngContactNavbar'
 

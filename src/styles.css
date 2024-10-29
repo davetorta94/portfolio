@@ -184,9 +184,7 @@ a:hover {
   opacity: 1;
 }
 
-.astronauta {
-  opacity: 0.9;
-}
+
 
 .sombrita {
     border: 0px solid #000;
@@ -209,7 +207,7 @@ a:hover {
 }
 
 
-.checkbox-apple {
+/*.checkbox-apple {
     position: relative;
     width: 50px;
     height: 25px;
@@ -259,7 +257,7 @@ a:hover {
   
   .checkbox-apple label:hover:after {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  }
+  }*/
 
   .project-images {
     display: flex;

@@ -6,7 +6,7 @@ import { ImagePresentation } from "./components/ImagePresentation";
 
 
 
-export const HomeEng = ({isBannerVisible}) => {
+export const HomeEng = ({ isBannerVisible, privacyAccepted}) => {
 
   const ref = useRef(null);
     const isInView = useInView(ref);
@@ -89,7 +89,7 @@ export const HomeEng = ({isBannerVisible}) => {
   
             </motion.div>
             
-            <ImagePresentation isBannerVisible={isBannerVisible}/>
+            <ImagePresentation isBannerVisible={isBannerVisible} privacyAccepted={privacyAccepted}/>
            
              
             
