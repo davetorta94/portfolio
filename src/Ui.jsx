@@ -30,6 +30,7 @@ export const Ui = ({ handleLanguage, spanish }) => {
     setIsBannerVisible(!privacyAccepted);
   }, []);
 
+
   // Función para aceptar la política y ocultar el banner
   const acceptPrivacyPolicy = () => {
     localStorage.setItem('privacyAccepted', 'true');
@@ -42,6 +43,9 @@ export const Ui = ({ handleLanguage, spanish }) => {
     setPrivacyAccepted(false);
   };
 
+  
+  
+
   return (
     <>
       {spanish ? (
@@ -51,9 +55,11 @@ export const Ui = ({ handleLanguage, spanish }) => {
           </div>
 
           <div className="container-fluid p-0 responsive-background">
-            <div className="particles">
-              <ParticleBackground />
+            
+            <div className='particles'>
+              <ParticleBackground/>
             </div>
+            
             {/* Pasamos privacyAccepted a Home */}
             <Home isBannerVisible={isBannerVisible} privacyAccepted={privacyAccepted} />
             <Tecnologias />
@@ -74,10 +80,10 @@ export const Ui = ({ handleLanguage, spanish }) => {
             <NavbarEng handleLanguage={handleLanguage} />
           </div>
 
-          <div className="container-fluid p-0 responsive-background">
-            <div className="particles">
+          <div className="container-fluid responsive-background">
+
               <ParticleBackground />
-            </div>
+
             {/* Pasamos privacyAccepted a HomeEng */}
             <HomeEng isBannerVisible={isBannerVisible} privacyAccepted={privacyAccepted} />
             <Technologies />

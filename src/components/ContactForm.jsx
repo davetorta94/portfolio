@@ -22,11 +22,11 @@ export const ContactForm = ({handleSubmit, onInputChange, name, email, message, 
                     <form className='d-flex flex-column justify-content-center' id='formulario' autoComplete='on' onSubmit={handleSubmit}>
                                 <input type="text" name='name' value={name} placeholder='  nombre' autoComplete='name'onChange={onInputChange} className='method-input justify-content-center'/>
                                 <input type="email" name='email' value={email} placeholder='  email'  autoComplete='email'onChange={onInputChange} className='method-input justify-content-center'/>
-                                <input type="text" name='message' value={message} placeholder='  message'  autoComplete='message'onChange={onInputChange} className='method-input justify-content-center'/>     
+                                <input type="text" name='message' value={message} placeholder='  mensaje'  autoComplete='mensaje'onChange={onInputChange} className='method-input justify-content-center'/>     
                                     <div className='text-white d-flex justify-content-between'>
                                   </div>
                                   <div className='d-flex justify-content-center'>
-                                      <input type="submit" name='boton' className='boton-formulario mb-3' placeholder='enviar'/>
+                                      <input type="submit" name='boton' className='boton-formulario mb-3' placeholder='submit'/>
                                   </div>
                             </form> 
                     </div>
@@ -62,7 +62,7 @@ export const ContactForm = ({handleSubmit, onInputChange, name, email, message, 
                                     <div className='text-white d-flex justify-content-between'>
                                   </div>
                                   <div className='d-flex justify-content-center'>
-                                      <input type="submit" name='boton' className='boton-formulario mb-3' placeholder='enviar'/>
+                                      <input type="submit" name='boton' className='boton-formulario mb-3' placeholder='submit'/>
                                   </div>
                             </form> 
                     </div>

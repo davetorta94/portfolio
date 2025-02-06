@@ -1,6 +1,7 @@
 import { Parallax } from 'react-scroll-parallax';
-import todopic from './images/captura-todo.webp'
+import amandapic from './images/captura-web-amanda-weslyn.webp'
 import myfpic from './images/captura-myf.webp'
+import { Link } from 'react-router-dom';
 
 export const Proyectos = () => {
 
@@ -19,14 +20,17 @@ export const Proyectos = () => {
             <div className="col-lg-12 text-white text-center mx-lg-5 mx-md-0 mt-md-2 pt-3">
           <Parallax scale={[1,1.5]}>
                 <h4 className='pb-2'>Agencia Marketing</h4>
-                <a href="https://aesthetic-faloodeh-62b027.netlify.app/" target='_blank'><img src={myfpic} alt="captura enlace de proyecto de agencia de marketing" className='linkpic' ></img></a>
+                <a href="https://myf-agency.netlify.app/" target='_blank'><img src={myfpic} alt="captura enlace de proyecto de agencia de marketing" className='linkpic' ></img></a>
           </Parallax>
             </div>
 
             <div className="col-lg-12 text-white text-center mx-lg-5 mx-md-0 mt-md-5 pt-3">
           <Parallax scale={[1,1.5]}>
-                <h4 className='pb-2'>App de Tareas</h4>
-                <a href="https://sparkling-panda-572dfa.netlify.app/?" target='_blank'><img src={todopic} alt="captura enlace de proyecto de app de tareas" className='linkpic' ></img></a>
+            <Link to="/detour">
+                <h4 className='pb-2 text-white'>Artista Amanda Weslyn</h4>
+                <a href="#" target='_blank'><img src={amandapic} alt="captura enlace a web de cantante Amanda Weslyn" className='linkpic' ></img></a>
+            </Link>
+                
           </Parallax>
             </div>
           

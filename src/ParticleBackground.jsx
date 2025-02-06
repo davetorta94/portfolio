@@ -1,9 +1,22 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import Particles from "react-particles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
 export const ParticleBackground = () => {
+    
+    useEffect(() => {
+        const setViewportHeight = () => {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        };
+
+        setViewportHeight();
+        window.addEventListener('resize', setViewportHeight);
+
+        return () => window.removeEventListener('resize', setViewportHeight);
+    }, []);
+    
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -30,7 +43,7 @@ export const ParticleBackground = () => {
                         value: "#18131f",
                     },
                 },
-                fpsLimit: 120,
+                fpsLimit: 60,
                 interactivity: {
                     events: {
                         onClick: {
@@ -66,9 +79,9 @@ export const ParticleBackground = () => {
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 200,
                         },
-                        value: 60,
+                        value: 20,
                     },
                     opacity: {
                         value: 0.5,
@@ -96,66 +109,3 @@ export const ParticleBackground = () => {
     );
 };
 
-//<Particles
-//            id="tsparticles"
-//            init={particlesInit}
-//            loaded={particlesLoaded}
-//            options={{
-//                background: {
-//                    color: {
-//                        value: "#18131f",
-//                    },
-//                },
-//                fpsLimit: 120,
-//                interactivity: {
-//                    events: {
-//                        onClick: {
-//                            enable: true,
-//                            mode: "push",
-//                        },
-//                        resize: true,
-//                    },
-//                    modes: {
-//                        push: {
-//                            quantity: 4,
-//                        },
-//                        repulse: {
-//                            distance: 200,
-//                            duration: 0.4,
-//                        },
-//                    },
-//                },
-//                particles: {
-//                    color: {
-//                        value: "#ffffff",
-//                    },
-//                    move: {
-//                        direction: "none",
-//                        enable: true,
-//                        outModes: {
-//                            default: "bounce",
-//                        },
-//                        random: false,
-//                        speed: 0.2,
-//                        straight: false,
-//                    },
-//                    number: {
-//                        density: {
-//                            enable: true,
-//                            area: 800,
-//                        },
-//                        value: 80,
-//                    },
-//                    opacity: {
-//                        value: 0.5,
-//                    },
-//                    shape: {
-//                        type: "circle",
-//                    },
-//                    size: {
-//                        value: { min: 1, max: 5 },
-//                    },
-//                },
-//                detectRetina: true,
-//            }}
-//        />

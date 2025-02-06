@@ -5,6 +5,7 @@ import { ContactPage } from '../components/ContactPage';
 import emailjs from 'emailjs-com';
 import { getEnvVariables } from '../helpers/getEnvVariables';
 import { useForm } from '../hooks/useForm';
+import { DetourPage } from '../pages/detourPage';
 
 // Desestructuramos las variables de entorno
 const { YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_USER_ID } = getEnvVariables();
@@ -83,7 +84,16 @@ export const AppRouter = () => {
               message={message}
             />
           }
+          
         />
+
+        <Route
+            path='/detour'
+            element={<DetourPage 
+                      spanish={spanish}
+                      handleLanguage={handleLanguage}/>} 
+            
+            />
       </Routes>
     </>
   );
