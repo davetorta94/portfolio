@@ -24,7 +24,7 @@ export const EngResponsiveTechnologies = () => {
     <div className="container-fluid responsive-tecnologias">
         <div className="row d-flex justify-content-center mt-5 mb-5">
             <div className="col-6 d-flex text-center justify-content-center text-light">
-                <h4>THE TECH I USE</h4>
+                <h2>THE TECH I USE</h2>
             </div>
         </div>
         <motion.div className="row d-flex justify-content-between"

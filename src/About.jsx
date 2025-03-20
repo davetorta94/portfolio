@@ -21,7 +21,7 @@ export const About = () => {
 
   return (
     <>
-    <motion.div className="container-fluid mt-5 mx-xs-0"
+    <motion.div className="container-fluid mt-5 mb-5 pb-5 pt-5 mx-xs-0"
     ref={ref}
     variants={{
       hide: { opacity: 0, y: 100, scale:0.5},

@@ -190,6 +190,30 @@ a:hover {
     width: 25rem;
     height: auto;
     opacity: 0.9;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+            linear-gradient(90deg, #cdf13b 0%, #301f4b 60%, #301f4b 100%);
+border-radius: 8px;
+padding: 9px;
+box-sizing: border-box;
+border-radius: 8px;
+padding: 9px;
+box-sizing: border-box;
+border-radius: 8px;
+padding: 9px;
+box-sizing: border-box;
+border-radius: 8px;
+padding: 9px;
+box-sizing: border-box;
+border-radius: 8px;
+padding: 9px;
+box-sizing: border-box;
     
 }
 
@@ -604,7 +628,7 @@ a:hover {
       width: 16rem;
       height: auto;
       opacity: 0.9;
-      border: 1px solid #fff;
+      
   }
     .res-punto{
       display: flex;
@@ -671,40 +695,15 @@ a:hover {
   }
 
   .align {
-    padding: 0.8rem;
     display: flex;
     flex-direction: row;
-    gap: 5px;
-    align-self: flex-start;
+    justify-content: center;
   }
 
-  .red {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ff605c;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-  }
-
-  .yellow {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ffbd44;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-  }
-
-  .green {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #00ca4e;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-  }
 
   .cardtest h2 {
     text-align: center;
-    padding-bottom: 1.3rem;
+    padding-bottom: 0.75rem;
     color:#d2fe23;
     text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
   }

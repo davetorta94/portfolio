@@ -8,10 +8,10 @@ export const ProyectosEng = () => {
   return (
     <>
     
-    <div className="container-fluid fondo-hor animate__animated animate__fadeInLeft mt-4 mb-lg-5 mb-md-0 mx-xs-0" id='projects'>
+    <div className="container-fluid fondo-hor animate__animated animate__fadeInLeft mt-5 mb-lg-5 mb-md-0 mx-xs-0" id='projects'>
       <div className="row d-flex justify-content-center mt-4 text-center text-white pt-4 pb-0 mb-0">
 
-              <h4>SOME OF MY PROJECTS</h4>
+              <h2>SOME OF MY PROJECTS</h2>
 
       </div>
       <div className="row project-images mx-xl-5 pb-5 mx-sm-4 mx-md-4 mt-3 pt-2">

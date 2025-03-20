@@ -18,7 +18,6 @@ import { EngMobileTechonologies } from './EngMobileTechnologies';
 import { FooterEng } from './FooterEng';
 import { PrivacyBanner } from './components/PrivacyBanner';
 import { PrivacyBannerEng } from './components/PrivacyBannerEng';
-import {CardTest} from './components/SkillCard';
 
 export const Ui = ({ handleLanguage, spanish }) => {
   const [isBannerVisible, setIsBannerVisible] = useState(false);

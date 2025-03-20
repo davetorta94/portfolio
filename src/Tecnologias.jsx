@@ -38,7 +38,7 @@ export const Tecnologias = () => {
                 id="sobremi">
         <div className="row d-flex justify-content-center mb-5">
             <div className="col-6 d-flex justify-content-center text-light">
-                <h4>LAS TECNOLOGÍAS CON LAS QUE TRABAJO</h4>
+                <h2>LAS TECNOLOGÍAS CON LAS QUE TRABAJO</h2>
             </div>
         </div>
         <motion.div className="row d-flex justify-content-lg-between justify-content-md-around"

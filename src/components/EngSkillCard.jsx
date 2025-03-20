@@ -1,5 +1,7 @@
 import React from 'react';
 import { engskills } from '../data/data'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 export const EngSkillCard = () => {
   return (
@@ -9,13 +11,13 @@ export const EngSkillCard = () => {
       engskills.map((engskill) => (
       <div className="cardtest" key={engskill.id}>
         
-        <div className="align">
-          <span className="red" />
-          <span className="yellow" />
-          <span className="green" />
-        </div>
+        
       
       <h2>{engskill.name}</h2>
+          <div className="align pb-2">
+            <FontAwesomeIcon icon={ engskill.icon }/>
+          </div>
+
       <h4 className='text-center'>
       {engskill.description}
       </h4>

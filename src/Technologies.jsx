@@ -37,7 +37,7 @@ export const Technologies = () => {
                 id="about">
         <div className="row d-flex justify-content-center mb-5">
             <div className="col-6 d-flex justify-content-center text-light">
-                <h4>THE TECH I USE</h4>
+                <h2>THE TECH I USE</h2>
             </div>
         </div>
         <motion.div className="row d-flex justify-content-lg-between justify-content-md-around"
