@@ -37,6 +37,8 @@ export const Home = ({isBannerVisible, privacyAccepted}) => {
                       transition={ {ease: "easeOut", duration: 2} }>
             <motion.div className="type-animation col-xl-6 col-lg-12 d-flex flex-column text-center justify-content-center">
 
+             
+
               <div className="animacion-grande">
                 <h2>
                     <TypeAnimation
