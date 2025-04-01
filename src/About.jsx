@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
-import { SkillCard } from "./components/SkillCard";
+import { PresentationCard } from "./components/PresentationCard"
 
 
 
 export const About = () => {
+
+  //const { id, name, description, experience, icon} = skills
 
   const ref = useRef(null);
     const isInView = useInView(ref);
@@ -35,7 +37,9 @@ export const About = () => {
             <h2>SKILLS</h2>
         </div>
 
-            <SkillCard />
+        <PresentationCard/>
+
+            {/*<SkillCard />*/}
           
     </motion.div>
             
@@ -45,3 +49,4 @@ export const About = () => {
   )
 }
  
+//key={id} name={name} description={description} experience={experience} icon={icon}

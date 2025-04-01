@@ -61,6 +61,8 @@ export const Home = ({isBannerVisible, privacyAccepted}) => {
                       className="type-animation-font"
                     />
                 </h2>
+
+                
               </div>
 
               <div className="animacion-responsive">
