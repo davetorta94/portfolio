@@ -6,8 +6,6 @@ import { PresentationCard } from "./components/PresentationCard"
 
 export const About = () => {
 
-  //const { id, name, description, experience, icon} = skills
-
   const ref = useRef(null);
     const isInView = useInView(ref);
     const aboutControls = useAnimation();
@@ -39,7 +37,6 @@ export const About = () => {
 
         <PresentationCard/>
 
-            {/*<SkillCard />*/}
           
     </motion.div>
             
@@ -49,4 +46,3 @@ export const About = () => {
   )
 }
  
-//key={id} name={name} description={description} experience={experience} icon={icon}

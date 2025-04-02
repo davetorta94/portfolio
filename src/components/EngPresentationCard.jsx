@@ -1,20 +1,20 @@
 import styled from 'styled-components';
-import { skills } from '../data/data';
+import { engskills } from '../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Loader } from './Loader';
 import { HoverLoader } from './HoverLoader';
 
 
-export const PresentationCard = () => {
+export const EngPresentationCard = () => {
   
   return (
     <StyledWrapper>
 
-      <div className='d-flex justify-content-around row'>
+      <div className='d-flex justify-content-around row pb-2'>
         
 
       {
-        skills.map((skill) => (
+        engskills.map((skill) => (
           
           
           <div className="card" key={skill.id}>
@@ -32,7 +32,6 @@ export const PresentationCard = () => {
             <div className="front-content">
               
               <div className="description">
-                
                 <div className="title">
                   <p className="title text-center">
                     <strong>{skill.description}</strong>

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
-import { EngSkillCard } from "./components/EngSkillCard";
+import { EngPresentationCard } from "./components/EngPresentationCard";
 
 
 
@@ -35,7 +35,8 @@ export const AboutEng = () => {
             <h2>SKILLS</h2>
         </div>
 
-        <EngSkillCard />
+        <EngPresentationCard />
+
 
         
     </motion.div>

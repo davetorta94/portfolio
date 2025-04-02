@@ -6,14 +6,14 @@ export const skills = [
     {
         id: 1,
         name: "Web",
-        description: "Front End - Back End - Wordpress - Ecommerce",
+        description: "[Front-End,    Back-End,    Wordpress,   Ecommerce]",
         experience: "Experiencia 4 años",
         icon:  faCode 
     },
     {
         id: 2,
         name: "Marketing",
-        description: "Copywriting - Redes Sociales",
+        description: "Copywriting       Redes Sociales",
         experience: "Experiencia 6 años",
         icon:  faLightbulb 
     },
@@ -30,14 +30,14 @@ export const engskills = [
     {
         id: 1,
         name: "Web",
-        description: "Front End - Back End - Wordpress - Ecommerce",
+        description: "[Front-End,    Back-End,    Wordpress,   Ecommerce]",
         experience: "4 year experience",
         icon:  faCode 
     },
     {
         id: 2,
         name: "Marketing",
-        description: "Copywriting - Social Media",
+        description: "Copywriting       Social Media",
         experience: "6 year experience",
         icon: faLightbulb 
     },

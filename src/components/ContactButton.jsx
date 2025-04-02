@@ -25,8 +25,8 @@ export const ContactButton = ({ privacyAccepted }) => {
   const styles = {
     button: {
       padding: '10px 20px',
-      backgroundColor: '#4CAF50',
-      color: 'white',
+      backgroundColor: '#CCFF00',
+      color: 'black',
       border: 'none',
       borderRadius: '5px',
       cursor: 'pointer',
