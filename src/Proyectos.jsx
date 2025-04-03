@@ -1,7 +1,6 @@
 import { Parallax } from 'react-scroll-parallax';
-import amandapic from './images/captura-web-amanda-weslyn.webp'
-import myfpic from './images/captura-myf.webp'
 import { Link } from 'react-router-dom';
+import { projects } from './data/data';
 
 export const Proyectos = () => {
 
@@ -17,24 +16,21 @@ export const Proyectos = () => {
       </div>
       <div className="row project-images mx-xl-5 pb-5 mx-sm-4 mx-md-4 mt-3 pt-2">
 
-            <div className="col-lg-12 text-white text-center mx-lg-5 mx-md-0 mt-md-2 pt-3">
-          <Parallax scale={[1,1.5]}>
-                <h4 className='pb-2'>Agencia de marketing myf</h4>
-                <a href="https://myf-agency.netlify.app/" target='_blank'><img src={myfpic} alt="captura enlace de proyecto de agencia de marketing" className='linkpic' ></img></a>
-          </Parallax>
-            </div>
 
-            <div className="col-lg-12 text-white text-center mx-lg-5 mx-md-0 mt-md-5 pt-3">
-          <Parallax scale={[1,1.5]}>
-            <Link to="/detour">
-                <h4 className='pb-2 text-white'>Amanda Weslyn Artista</h4>
-                <a href="#" target='_blank'><img src={amandapic} alt="captura enlace a web de cantante Amanda Weslyn" className='linkpic' ></img></a>
-            </Link>
-                
-          </Parallax>
-            </div>
+        {    
+          projects.map((project) => (
+            <div className="col-lg-12 text-white text-center mx-lg-5 mx-md-0 mt-md-2 pt-3" key={project.id}>
+            <Parallax scale={[1,1.5]}>
+                  <h4 className='pb-2'>{project.name}</h4>
+                  <Link to={`/tour/${project.id}`} key={project.id}>
+                    <img src={project.image} alt={project.alt} className='linkpic' />
+                  </Link>
+            </Parallax>
+              </div>
+          ))
           
-          
+            
+        }
           
       </div>
       </div>
@@ -45,3 +41,12 @@ export const Proyectos = () => {
   )
 }
 
+ {/*<div className="col-lg-12 text-white text-center mx-lg-5 mx-md-0 mt-md-5 pt-3">
+          <Parallax scale={[1,1.5]}>
+            <Link to="/detour">
+                <h4 className='pb-2 text-white'>Amanda Weslyn Artista</h4>
+                <a href="#" target='_blank'><img src={amandapic} alt="captura enlace a web de cantante Amanda Weslyn" className='linkpic' ></img></a>
+            </Link>
+                
+          </Parallax>
+            </div>*/}

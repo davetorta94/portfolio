@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-export const ContactButton = ({ privacyAccepted }) => {
+export const ContactButton = ({ privacyAccepted = false }) => {
   
   if (!privacyAccepted) {
     return null; // Si no se acepta la privacidad, no mostramos el botón

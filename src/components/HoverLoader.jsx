@@ -28,8 +28,8 @@ const StyledWrapper = styled.div`
     --logo-color: grey;
     --background: linear-gradient(
       0deg,
-      rgba(50, 50, 50, 0.2) 0%,
-      rgba(100, 100, 100, 0.2) 100%
+      rgba(139, 139, 139, 0.03) 0%,
+      rgba(5, 5, 5, 0.57) 100%
     );
     height: var(--size);
     aspect-ratio: 1;
@@ -38,7 +38,7 @@ const StyledWrapper = styled.div`
 
   .loader .box {
     position: absolute;
-    background: rgba(100, 100, 100, 0.15);
+    background: rgba(0, 0, 0, 0.15);
     background: var(--background);
     border-radius: 50%;
     border-top: 1px solid rgba(100, 100, 100, 1);

@@ -7,7 +7,7 @@ import { ContactButton } from "./ContactButton";
 export const ImagePresentation = ({isBannerVisible, privacyAccepted}) => {
 
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { triggerOnce: true });
   const photoControls = useAnimation(); 
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export const ImagePresentation = ({isBannerVisible, privacyAccepted}) => {
     }
   
     
-  }, [isInView])
+  }, [isInView, photoControls, ref])
   
 
   return (

@@ -1,6 +1,9 @@
 import { faComments } from '@fortawesome/free-regular-svg-icons';
 import { faLightbulb } from '@fortawesome/free-regular-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
+import myfpic from '../images/captura-myf.webp'
+import amandapic from '../images/captura-web-amanda-weslyn.webp'
+
 
 export const skills = [
     {
@@ -47,5 +50,39 @@ export const engskills = [
         description: "Spanish - Native",
         experience: "English - C1",
         icon: faComments
+    }
+]
+
+export const projects = [
+    {
+        id: 1,
+        name: "Agencia Marketing MYF",
+        image: myfpic,
+        url: "https://myf-agency.netlify.app/",
+        alt: "captura enlace de proyecto de agencia de marketing",
+    },
+    {
+        id: 2,
+        name: "Amanda Weslyn Artista",
+        image: amandapic,
+        url: "https://amandaweslyn.com/",
+        alt: "captura enlace a web de cantante Amanda Weslyn",
+    }
+]
+
+export const engprojects = [
+    {
+        id: 1,
+        name: "Marketing Agency",
+        image: myfpic,
+        url: "https://myf-agency.netlify.app/",
+        alt: "captura enlace de proyecto de agencia de marketing",
+    },
+    {
+        id: 2,
+        name: "Artist Amanda Weslyn",
+        image: amandapic,
+        url: "https://amandaweslyn.com/",
+        alt: "captura enlace a web de cantante Amanda Weslyn",
     }
 ]
