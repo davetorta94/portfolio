@@ -186,6 +186,12 @@ a:hover {
   font-size: 18px;
 }
 
+.gif{
+  width: 50%;
+  height: auto;
+  border-radius: 25px;
+}
+
 .linkpic{
     width: 25rem;
     height: auto;

@@ -5,7 +5,6 @@ import { ContactPage } from '../components/ContactPage';
 import emailjs from 'emailjs-com';
 import { getEnvVariables } from '../helpers/getEnvVariables';
 import { useForm } from '../hooks/useForm';
-import { DetourPage } from '../pages/DetourPage';
 import { TourPage } from '../pages/TourPage';
 import { projects } from '../data/data';
 
@@ -90,16 +89,10 @@ export const AppRouter = () => {
           
         />
 
-        <Route
-            path='/detour'
-            element={<DetourPage 
-                      spanish={spanish}
-                      handleLanguage={handleLanguage}/>} 
-            
-            />
+        
 
-          <Route path='/tour' element={<TourPage projects={projects}  handleLanguage={handleLanguage} />} />
-          <Route path='/tour/:id' element={<TourPage projects={projects} spanish={spanish} />} />
+          <Route path='/tour' element={<TourPage projects={projects} spanish={spanish} handleLanguage={handleLanguage} />} />
+          <Route path='/tour/:id' element={<TourPage projects={projects} spanish={spanish} handleLanguage={handleLanguage} />} />
 
 
       </Routes>

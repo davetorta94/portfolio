@@ -64,4 +64,3 @@ export const ImagePresentation = ({isBannerVisible, privacyAccepted}) => {
   )
 }
 
-// <ContactButton />
