@@ -7,6 +7,7 @@ import { getEnvVariables } from '../helpers/getEnvVariables';
 import { useForm } from '../hooks/useForm';
 import { TourPage } from '../pages/TourPage';
 import { projects } from '../data/data';
+import { ScrollToTop } from '../components/ScrollToTop';
 
 
 // Desestructuramos las variables de entorno
@@ -64,30 +65,33 @@ export const AppRouter = () => {
 
   return (
     <>
+
+    <ScrollToTop />
+
       <Routes>
         {/* Ruta principal */}
         <Route
           path='/'
           element={<Ui handleLanguage={handleLanguage} spanish={spanish} />}
-        />
+          />
 
         {/* Ruta para el contacto */}
         <Route
           path='/contact'
           element={
             <ContactPage
-              handleSubmit={handleSubmit}
-              handleLanguage={handleLanguage}
-              spanish={spanish}
-              submitted={submitted}
-              onInputChange={onInputChange}
-              name={name}
-              email={email}
-              message={message}
+            handleSubmit={handleSubmit}
+            handleLanguage={handleLanguage}
+            spanish={spanish}
+            submitted={submitted}
+            onInputChange={onInputChange}
+            name={name}
+            email={email}
+            message={message}
             />
           }
           
-        />
+          />
 
         
 
@@ -96,6 +100,7 @@ export const AppRouter = () => {
 
 
       </Routes>
+
     </>
   );
 };

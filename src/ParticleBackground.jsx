@@ -91,12 +91,12 @@ export const ParticleBackground = () => {
                     size: {
                         value: { min: 1, max: 5 },
                     },
-                    line_linked: {
+                    links: {
                         enable: true,
                         distance: 150,
                         color: "#000",
                         opacity: 0.8,
-                    }
+                      },
                 },
                 detectRetina: true,
             }}

@@ -2,7 +2,6 @@ import React from 'react'
 import { ParticleBackground } from '../ParticleBackground'
 import { ContactForm } from './ContactForm'
 import { ContactNavbar } from './ContactNavbar'
-import { EngContactNavbar } from './EngContactNavbar'
 
 export const ContactPage = ({handleSubmit, onInputChange, name, email, message, handleLanguage, spanish}) => {
 
@@ -30,7 +29,7 @@ export const ContactPage = ({handleSubmit, onInputChange, name, email, message, 
             : (
 
                 <>
-                <EngContactNavbar 
+                <ContactNavbar 
                 handleLanguage={handleLanguage}
                 spanish={spanish}/>
                 <ParticleBackground />

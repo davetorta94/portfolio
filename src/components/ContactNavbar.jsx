@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 
-export const ContactNavbar = ({handleLanguage}) => {
+export const ContactNavbar = ({handleLanguage, spanish}) => {
 
   return (
     <>
@@ -32,9 +32,15 @@ export const ContactNavbar = ({handleLanguage}) => {
           <ul className="navbar-nav w-100 justify-content-end">
             {/* Language Toggle Button */}
             <li className="nav-item">
-              <button className="btn btn-primary" onClick={handleLanguage}>
+          { spanish ?
+              <button className="btn btn-primary mt-1" onClick={handleLanguage}>
                 ENG
               </button>
+              : 
+              <button className="btn btn-primary mt-1" onClick={handleLanguage}>
+                ESP
+              </button>
+              }
             </li>
           </ul>
         </div>

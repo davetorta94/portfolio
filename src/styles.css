@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  height: 100%;
 }
 a, p, h4{
   font-family: Roboto;
@@ -11,6 +12,10 @@ a{
 a:hover {
   text-decoration: none;
   color: #CCFF00;
+}
+
+#sobremidos, #proyectos, #inicio, #home, #projects, #aboutmetwo {
+  scroll-margin-top: 160px;
 }
 
 .margin-per {
@@ -151,7 +156,7 @@ a:hover {
     opacity: 0.8;
     background-size: 20px 20px;
     background-image:  repeating-linear-gradient(to right, #68686b, #68686b 1px, #3a3a3b 1px, #3a3a3b);
-    height: 100%;
+    height: calc(var(--vh, 1vh) * 100);
 }
 /*.fondo-hor{
   background-color: #3A3A3B;
@@ -303,15 +308,16 @@ box-sizing: border-box;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }*/
 
-  #tsparticles {
-    position: absolute; /* O `fixed` si quieres que esté siempre visible en la pantalla */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Asegúrate de que no genere desplazamientos */
-    z-index: -1; /* Ponlo detrás de otros elementos si es necesario */
-  }
+  
+    #tsparticles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(var(--vh, 1vh) * 100);
+      z-index: -1;
+    }
+
   
 
   .project-images {
@@ -630,7 +636,6 @@ box-sizing: border-box;
       flex-direction: column;
       align-items: center;
       overflow-x: hidden;
-      margin-bottom: 2000px;
     }
     .linkpic{
       width: 16rem;
